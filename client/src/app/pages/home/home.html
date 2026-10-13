@@ -212,7 +212,15 @@
           <div class="awards__track" [style.transform]="'translateX(-' + award() * 100 + '%)'">
             @for (a of m.awards; track $index) {
               <div class="awards__slide">
-                <div class="awards__card">{{ i18n.tr(a, 'text') }}</div>
+                <div class="awards__card">
+                  <span>{{ i18n.tr(a, 'text') }}</span>
+                  @if (a.source) {
+                    <small class="awards__source">📺 {{ i18n.tr(a, 'source') }}</small>
+                  }
+                  @if (a.video) {
+                    <video class="awards__video" [src]="a.video" [attr.poster]="a.poster || null" controls preload="none" playsinline></video>
+                  }
+                </div>
               </div>
             }
           </div>

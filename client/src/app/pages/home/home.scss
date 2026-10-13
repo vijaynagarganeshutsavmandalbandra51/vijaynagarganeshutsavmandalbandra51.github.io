@@ -659,3 +659,7 @@ a.contact__row:hover {
   .feature-grid { grid-template-columns: 1fr; gap: 40px; }
   .feature .lead { min-height: 0; }
 }
+
+.awards__card { flex-direction: column; gap: 10px; }
+.awards__source { display: block; color: var(--accent); font-weight: 600; font-size: .9rem; }
+.awards__video { display: block; width: 100%; margin-top: 8px; border-radius: 12px; border: 3px solid var(--marigold); background: #000; aspect-ratio: 16 / 9; }

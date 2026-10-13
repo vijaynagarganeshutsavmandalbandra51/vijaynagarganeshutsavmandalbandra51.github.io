@@ -148,7 +148,11 @@
   "awards": [
     {
       "text": "Our Kedarnath decoration was featured on TV news – Ganeshotsav 2026",
-      "textMr": "आमचा केदारनाथ देखावा टीव्ही बातम्यांमध्ये झळकला – गणेशोत्सव २०२६"
+      "textMr": "आमचा केदारनाथ देखावा टीव्ही बातम्यांमध्ये झळकला – गणेशोत्सव २०२६",
+      "source": "Jai Maharashtra News · 18 September 2026",
+      "sourceMr": "जय महाराष्ट्र न्यूज · १८ सप्टेंबर २०२६",
+      "video": "media/years/2026/tv-news-2026.mp4",
+      "poster": "media/years/2026/tv-news-2026.poster.jpg"
     }
   ],
   "announcements": [
@@ -194,8 +198,8 @@
     "enabled": true,
     "upiId": "yourmandal@upi",
     "payeeName": "Vijay Nagar Sarvajanik Ganesh Utsav Mandal",
-    "note": "You can contribute to the Utsav and to the social initiatives run by the mandal throughout the year.",
-    "noteMr": "उत्सव व मंडळाच्या वर्षभरातील सामाजिक उपक्रमांसाठी आपण देणगी देऊ शकता.",
+    "note": "You can contribute to Bappa's Utsav and to our annual Bhandara, open to everyone.",
+    "noteMr": "बाप्पाच्या उत्सवासाठी व सर्वांसाठी खुल्या वार्षिक भंडाऱ्यासाठी आपण देणगी देऊ शकता.",
     "bank": {
       "accountName": "Vijay Nagar Sarvajanik Ganesh Utsav Mandal",
       "accountNumber": "XXXXXXXXXXXX",

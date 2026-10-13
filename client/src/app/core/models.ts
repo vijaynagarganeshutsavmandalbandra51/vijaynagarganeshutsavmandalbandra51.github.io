@@ -90,7 +90,8 @@ export interface MandalInfo {
     timeline: TimelineItem[];
   };
   stats: Stat[];
-  awards: Text[];
+  /** an award can also carry a video (e.g. TV news clip) shown right under its text */
+  awards: (Text & { video?: string; poster?: string; source?: string; sourceMr?: string })[];
   announcements: Announcement[];
   about: { short: string; shortMr?: string };
   contact: {
