@@ -73,15 +73,6 @@
       "time": "6:00 AM – 11:30 PM"
     }
   ],
-  "featuredVideo": {
-    "title": "Visarjan 2026",
-    "titleMr": "विसर्जन सोहळा २०२६",
-    "text": "Bappa's farewell – carried on our shoulders through clouds of gulal to the sea, with the whole of Vijay Nagar saying “Pudhchya varshi lavkar ya!”",
-    "textMr": "बाप्पाचा निरोप – गुलालाच्या उधळणीत खांद्यावरून समुद्रापर्यंत, आणि संपूर्ण विजय नगरचा एकच जयघोष – “पुढच्या वर्षी लवकर या!”",
-    "youtubeId": "",
-    "file": "media/years/2026/visarjan-2026.mp4",
-    "poster": "media/years/2026/visarjan-2026.poster.jpg"
-  },
   "history": {
     "image": "images/history.svg",
     "paragraphs": [
@@ -211,5 +202,25 @@
       "ifsc": "XXXX0000000",
       "bankName": "Your Bank, Branch Name"
     }
-  }
+  },
+  "featuredVideos": [
+    {
+      "title": "Aagman 2026",
+      "titleMr": "आगमन सोहळा २०२६",
+      "text": "Bappa's grand arrival – revealed through clouds of colour and a shower of sparklers.",
+      "textMr": "बाप्पाचे भव्य आगमन – रंगांच्या उधळणीत आणि फुलबाज्यांच्या वर्षावात.",
+      "youtubeId": "",
+      "file": "media/years/2026/aagman-2026.mp4",
+      "poster": "media/years/2026/aagman-2026.poster.jpg"
+    },
+    {
+      "title": "Visarjan 2026",
+      "titleMr": "विसर्जन सोहळा २०२६",
+      "text": "Bappa's farewell – carried on our shoulders through clouds of gulal to the sea, with the whole of Vijay Nagar saying “Pudhchya varshi lavkar ya!”",
+      "textMr": "बाप्पाचा निरोप – गुलालाच्या उधळणीत खांद्यावरून समुद्रापर्यंत, आणि संपूर्ण विजय नगरचा एकच जयघोष – “पुढच्या वर्षी लवकर या!”",
+      "youtubeId": "",
+      "file": "media/years/2026/visarjan-2026.mp4",
+      "poster": "media/years/2026/visarjan-2026.poster.jpg"
+    }
+  ]
 }

@@ -52,6 +52,12 @@ export class Home {
     return p?.kind === 'ongoing' ? p : null;
   });
 
+  /** featuredVideos list, or the older single featuredVideo */
+  protected readonly featured = computed(() => {
+    const m = this.mandal();
+    return m?.featuredVideos ?? (m?.featuredVideo ? [m.featuredVideo] : []);
+  });
+
   protected readonly homeVideos = computed(() => (this.videos()?.videos ?? []).filter((v) => v.showOnHome && !!v.youtubeId));
   /** Latest year folders for the "Through the years" strip. */
   protected readonly recentYears = computed(() => (this.years()?.years ?? []).slice(0, 8));

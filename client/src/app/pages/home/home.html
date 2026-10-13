@@ -65,19 +65,25 @@
     </div>
   </section>
 
-  <!-- ================= FEATURED VIDEO ================= -->
-  @if (m.featuredVideo; as fv) {
+  <!-- ================= FEATURED VIDEOS (mandal.json → featuredVideos) ================= -->
+  @if (featured().length) {
     <section class="section section--warm">
-      <div class="container narrow" appReveal>
-        <h2 class="section-title">{{ i18n.tr(fv, 'title') }}</h2>
-        @if (fv.text) {
-          <p class="lead">{{ i18n.tr(fv, 'text') }}</p>
-        }
-        @if (fv.file) {
-          <video class="feature-video" [src]="fv.file" [attr.poster]="fv.poster || null" controls preload="none" playsinline></video>
-        } @else {
-          <app-youtube [videoId]="fv.youtubeId" [title]="i18n.tr(fv, 'title')" />
-        }
+      <div class="container">
+        <div class="feature-grid" [class.feature-grid--single]="featured().length === 1">
+          @for (fv of featured(); track $index) {
+            <article class="feature" appReveal>
+              <h2 class="section-title">{{ i18n.tr(fv, 'title') }}</h2>
+              @if (fv.text) {
+                <p class="lead">{{ i18n.tr(fv, 'text') }}</p>
+              }
+              @if (fv.file) {
+                <video class="feature-video" [src]="fv.file" [attr.poster]="fv.poster || null" controls preload="none" playsinline></video>
+              } @else {
+                <app-youtube [videoId]="fv.youtubeId" [title]="i18n.tr(fv, 'title')" />
+              }
+            </article>
+          }
+        </div>
       </div>
     </section>
   }

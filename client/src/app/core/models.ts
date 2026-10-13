@@ -81,6 +81,8 @@ export interface MandalInfo {
   };
   aartiTimings: AartiTiming[];
   featuredVideo?: VideoItem;
+  /** several videos side by side on the home page (e.g. Aagman + Visarjan) */
+  featuredVideos?: VideoItem[];
   history: {
     image: string;
     paragraphs: string[];
