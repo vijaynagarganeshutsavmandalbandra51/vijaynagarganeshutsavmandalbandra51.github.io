@@ -74,7 +74,11 @@
         @if (fv.text) {
           <p class="lead">{{ i18n.tr(fv, 'text') }}</p>
         }
-        <app-youtube [videoId]="fv.youtubeId" [title]="i18n.tr(fv, 'title')" />
+        @if (fv.file) {
+          <video class="feature-video" [src]="fv.file" [attr.poster]="fv.poster || null" controls preload="none" playsinline></video>
+        } @else {
+          <app-youtube [videoId]="fv.youtubeId" [title]="i18n.tr(fv, 'title')" />
+        }
       </div>
     </section>
   }

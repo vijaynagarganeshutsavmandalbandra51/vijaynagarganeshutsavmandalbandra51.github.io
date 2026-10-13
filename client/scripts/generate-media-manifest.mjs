@@ -26,7 +26,7 @@ const outFile = join(root, 'data', 'years.json');
 
 const IMAGE = new Set(['.jpg', '.jpeg', '.png', '.webp', '.gif', '.svg', '.avif']);
 const VIDEO = new Set(['.mp4', '.webm']);
-const BIG_FILE_MB = 25;
+const BIG_FILE_MB = 50; // GitHub warns above 50 MB and rejects files above 100 MB
 
 const mandal = JSON.parse(readFileSync(join(root, 'data', 'mandal.json'), 'utf8'));
 const firstYear = Number(mandal.firstUtsavYear) || Number(mandal.established);
@@ -64,10 +64,13 @@ if (existsSync(yearsDir)) {
 
     for (const f of files) {
       const mb = statSync(join(dir, f)).size / 1024 / 1024;
-      if (mb > BIG_FILE_MB) warnings.push(`${name}/${f} is ${mb.toFixed(0)} MB – too big for GitHub; compress it or upload to YouTube.`);
+      if (mb > BIG_FILE_MB) warnings.push(`${name}/${f} is ${mb.toFixed(0)} MB – large for GitHub (limit 100 MB) and slow on phones; compress it or upload to YouTube.`);
     }
 
-    const imageFiles = files.filter((f) => IMAGE.has(extname(f).toLowerCase()));
+    // "clip.poster.jpg" next to "clip.mp4" = thumbnail for that video (not listed as a photo)
+    const isPoster = (f) => /\.poster\.[a-z]+$/i.test(f);
+    const posterFor = (v) => files.find((f) => isPoster(f) && f.split('.poster.')[0] === v.replace(/\.[^.]+$/, ''));
+    const imageFiles = files.filter((f) => IMAGE.has(extname(f).toLowerCase()) && !isPoster(f));
     const coverFile = imageFiles.find((f) => /^cover\./i.test(f)) ?? imageFiles[0];
     const captions = info.captions ?? {};
 
@@ -80,7 +83,7 @@ if (existsSync(yearsDir)) {
     }));
 
     const videos = [
-      ...files.filter((f) => VIDEO.has(extname(f).toLowerCase())).map((f) => ({ type: 'file', src: url(f) })),
+      ...files.filter((f) => VIDEO.has(extname(f).toLowerCase())).map((f) => ({ type: 'file', src: url(f), poster: posterFor(f) ? url(posterFor(f)) : undefined, caption: captions[f] ?? '', captionMr: (info.captionsMr ?? {})[f] ?? '' })),
       ...(info.youtube ?? []).map(youtubeId).filter(Boolean).map((id) => ({ type: 'youtube', id })),
     ];
 

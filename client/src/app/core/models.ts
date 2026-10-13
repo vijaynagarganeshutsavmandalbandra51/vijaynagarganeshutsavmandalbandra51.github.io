@@ -51,6 +51,9 @@ export interface VideoItem {
   text?: string;
   textMr?: string;
   youtubeId?: string;
+  /** a video file in public/ (e.g. media/years/2026/visarjan-2026.mp4) instead of YouTube */
+  file?: string;
+  poster?: string;
   year?: string;
   showOnHome?: boolean;
 }
@@ -153,7 +156,9 @@ export interface YearImage {
   captionMr?: string;
 }
 
-export type YearVideo = { type: 'file'; src: string } | { type: 'youtube'; id: string };
+export type YearVideo =
+  | { type: 'file'; src: string; poster?: string; caption?: string; captionMr?: string }
+  | { type: 'youtube'; id: string };
 
 /** One folder in public/media/years/<year>/ (generated into data/years.json). */
 export interface YearEntry {

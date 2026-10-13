@@ -51,7 +51,12 @@ import { YoutubeEmbed } from '../../shared/youtube-embed';
                     @if (v.type === 'youtube') {
                       <app-youtube [videoId]="v.id" [title]="'Ganeshotsav ' + y.year" />
                     } @else {
-                      <video [src]="v.src" controls preload="metadata" playsinline></video>
+                      <figure class="vid">
+                        <video [src]="v.src" [attr.poster]="v.poster || null" controls preload="none" playsinline></video>
+                        @if (i18n.tr(v, 'caption')) {
+                          <figcaption>{{ i18n.tr(v, 'caption') }}</figcaption>
+                        }
+                      </figure>
                     }
                   </div>
                 }
@@ -101,7 +106,9 @@ import { YoutubeEmbed } from '../../shared/youtube-embed';
     }
     .videos-title { margin-top: 56px; }
     .videos { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-top: 24px; }
-    video { width: 100%; border-radius: 16px; border: 3px solid var(--marigold); background: #000; }
+    .vid { margin: 0; text-align: center; }
+    video { display: block; width: auto; max-width: 100%; max-height: 80vh; margin: 0 auto; border-radius: 16px; border: 3px solid var(--marigold); background: #000; }
+    .vid figcaption { margin-top: 10px; font-weight: 600; color: var(--primary); }
     .pager { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px; margin-top: 56px; }
     .pager > :first-child { justify-self: start; }
     .pager > :last-child { justify-self: end; }
