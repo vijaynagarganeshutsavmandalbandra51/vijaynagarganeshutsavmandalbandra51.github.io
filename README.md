@@ -140,6 +140,8 @@ After that, every `git push` (or editing a file directly on github.com) updates 
 
 **Show up in Google Search (free):** go to https://search.google.com/search-console → *Add property* → *URL prefix* → paste your github.io address → verify with the "HTML tag" method (paste the `<meta>` tag into `client/src/index.html` inside `<head>`, push, then click Verify) → *Sitemaps/URL inspection* → *Request indexing*. Google usually lists it within a few days.
 
+**After buying a custom domain:** replace `https://vijaynagarganeshutsavmandalbandra51.github.io/` with the new address in `client/src/index.html` (canonical, og:url, og:image, JSON-LD), `client/public/sitemap.xml` and `client/public/robots.txt`.
+
 **Optional:** a custom name like `www.yourmandal.com` costs ~₹800/year — not needed.
 
 ---

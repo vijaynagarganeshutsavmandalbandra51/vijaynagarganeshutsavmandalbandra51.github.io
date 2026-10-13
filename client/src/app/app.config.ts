@@ -29,7 +29,7 @@ class MandalTitleStrategy extends TitleStrategy {
   }
   override updateTitle(snapshot: RouterStateSnapshot): void {
     const page = this.buildTitle(snapshot);
-    this.title.setTitle(page ? `${page} | Vijay Nagar Ganesh Utsav Mandal` : 'Vijay Nagar Sarvajanik Ganesh Utsav Mandal');
+    this.title.setTitle(page ? `${page} | Vijay Nagarcha Raja, Bandra (East)` : 'Vijay Nagarcha Raja | Vijay Nagar Sarvajanik Ganesh Utsav Mandal, Bandra (East)');
   }
 }
 
