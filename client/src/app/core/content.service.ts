@@ -49,7 +49,9 @@ export class ContentService {
 
   private load<T>(name: string): Observable<T | undefined> {
     if (!this.cache.has(name)) {
-      const url = `${environment.contentBaseUrl}${name}${environment.contentSuffix}`;
+      // "?t=<minute>" makes phones fetch fresh content after every update instead of
+      // re-using a copy GitHub Pages lets them keep for 10 minutes (files are tiny).
+      const url = `${environment.contentBaseUrl}${name}${environment.contentSuffix}?t=${Math.floor(Date.now() / 60000)}`;
       const request$ = this.http.get<T>(url).pipe(
         catchError((err) => {
           console.error(`Could not load content "${name}" from ${url}`, err);
