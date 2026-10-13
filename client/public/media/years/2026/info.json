@@ -8,12 +8,21 @@
     "cover.jpg": "Bappa 2026",
     "01-darshan.jpg": "Darshan – Kedarnath decoration",
     "02-bappa-nandi.jpg": "Bappa with Mahadev and Nandi",
-    "03-darshan.jpg": "Bappa in yellow pitambar"
+    "03-darshan.jpg": "Bappa in yellow pitambar",
+    "05-decoration-team.jpg": "Our decoration team"
   },
   "captionsMr": {
     "cover.jpg": "बाप्पा २०२६",
     "01-darshan.jpg": "दर्शन – केदारनाथ देखावा",
     "02-bappa-nandi.jpg": "महादेव व नंदीसह बाप्पा",
-    "03-darshan.jpg": "पिवळ्या पितांबरातील बाप्पा"
+    "03-darshan.jpg": "पिवळ्या पितांबरातील बाप्पा",
+    "05-decoration-team.jpg": "आमची सजावट टीम"
+  },
+  "team": {
+    "photo": "05-decoration-team.jpg",
+    "title": "Made by our own decoration team",
+    "titleMr": "आमच्या स्वतःच्या सजावट टीमने साकारलेला देखावा",
+    "text": "The entire Kedarnath set – the temple, the snowy Himalayas, Mahadev and Nandi – was designed and built by the young volunteers of our mandal with their own hands. Hats off to their hard work and devotion!",
+    "textMr": "केदारनाथ मंदिर, बर्फाळ हिमालय, महादेव आणि नंदी – संपूर्ण देखावा आमच्या मंडळातील तरुण कार्यकर्त्यांनी स्वतःच्या हाताने साकारला. त्यांच्या मेहनतीला व भक्तीला सलाम!"
   }
 }

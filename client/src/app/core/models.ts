@@ -163,6 +163,8 @@ export interface YearEntry {
   text?: string;
   textMr?: string;
   cover: string;
+  /** optional "made by" credit with a group photo (info.json → team) */
+  team?: { photo: string; title?: string; titleMr?: string; text?: string; textMr?: string };
   images: YearImage[];
   videos: YearVideo[];
 }

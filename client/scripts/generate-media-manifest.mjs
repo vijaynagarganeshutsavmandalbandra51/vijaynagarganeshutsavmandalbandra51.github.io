@@ -94,6 +94,7 @@ if (existsSync(yearsDir)) {
       text: info.text ?? '',
       textMr: info.textMr ?? '',
       cover: coverFile ? url(coverFile) : '',
+      team: info.team?.photo ? { ...info.team, photo: url(info.team.photo) } : undefined,
       images,
       videos,
     });
