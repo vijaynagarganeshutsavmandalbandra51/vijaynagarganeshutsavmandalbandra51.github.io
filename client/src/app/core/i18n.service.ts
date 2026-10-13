@@ -36,7 +36,7 @@ const LABELS = {
   aboutUs: { en: 'About Us', mr: 'आमच्याबद्दल' },
   importantLinks: { en: 'Important Links', mr: 'महत्त्वाच्या लिंक्स' },
   established: { en: 'Established', mr: 'स्थापना' },
-  bappaComing: { en: 'Bappa is coming in', mr: 'बाप्पा येत आहेत' },
+  bappaComing: { en: 'Bappa is coming on', mr: 'बाप्पा येत आहेत' },
   days: { en: 'Days', mr: 'दिवस' },
   hours: { en: 'Hours', mr: 'तास' },
   minutes: { en: 'Minutes', mr: 'मिनिटे' },
