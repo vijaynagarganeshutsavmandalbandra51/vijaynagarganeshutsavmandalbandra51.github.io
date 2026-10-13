@@ -21,7 +21,7 @@ import { routes } from './app.routes';
 // Marathi month/day names for the date pipe.
 registerLocaleData(localeMr);
 
-/** Browser tab title: "<Page> | Ganeshotsav Mandal". */
+/** Browser tab title: "<Page> | Vijay Nagar Ganesh Utsav Mandal". */
 @Injectable({ providedIn: 'root' })
 class MandalTitleStrategy extends TitleStrategy {
   constructor(private readonly title: Title) {
@@ -29,7 +29,7 @@ class MandalTitleStrategy extends TitleStrategy {
   }
   override updateTitle(snapshot: RouterStateSnapshot): void {
     const page = this.buildTitle(snapshot);
-    this.title.setTitle(page ? `${page} | Ganeshotsav Mandal` : 'Ganeshotsav Mandal');
+    this.title.setTitle(page ? `${page} | Vijay Nagar Ganesh Utsav Mandal` : 'Vijay Nagar Sarvajanik Ganesh Utsav Mandal');
   }
 }
 

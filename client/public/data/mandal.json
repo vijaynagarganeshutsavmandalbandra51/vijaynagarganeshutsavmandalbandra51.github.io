@@ -1,26 +1,26 @@
 {
   "shortName": "VNSGM",
-  "name": "Your Sarvajanik Ganeshotsav Mandal",
-  "nameMr": "सार्वजनिक गणेशोत्सव मंडळ",
+  "name": "Vijay Nagar Sarvajanik Ganesh Utsav Mandal",
+  "nameMr": "विजय नगर सार्वजनिक गणेशोत्सव मंडळ",
   "tagline": "Celebrating devotion, unity and culture every year",
   "taglineMr": "गणपती बाप्पा मोरया, मंगलमूर्ती मोरया!",
   "established": 1969,
   "firstUtsavYear": 1969,
   "logo": "images/logo.svg",
-  "address": "Mandal Chowk, Main Road, Pune, Maharashtra 411001",
-  "addressMr": "मंडळ चौक, मुख्य रस्ता, पुणे, महाराष्ट्र ४११००१",
+  "address": "Vijay Nagar, Bandra (East), Mumbai, Maharashtra 400051",
+  "addressMr": "विजय नगर, वांद्रे (पूर्व), मुंबई, महाराष्ट्र ४०००५१",
   "marquee": [
     {
-      "text": "Your Sarvajanik Ganeshotsav Mandal, Pune | Established 1969 | 59th year of Ganeshotsav in 2027",
-      "textMr": "सार्वजनिक गणेशोत्सव मंडळ, पुणे | स्थापना १९६९ | २०२७ – उत्सवाचे ५९ वे वर्ष"
+      "text": "Vijay Nagar Sarvajanik Ganesh Utsav Mandal, Bandra (East), Mumbai | Established 1969 | 59th year of Ganeshotsav in 2027",
+      "textMr": "विजय नगर सार्वजनिक गणेशोत्सव मंडळ, वांद्रे (पूर्व), मुंबई | स्थापना १९६९ | २०२७ – उत्सवाचे ५९ वे वर्ष"
     },
     {
       "text": "Ganeshotsav 2027 begins on Saturday, 4 September 2027",
       "textMr": "गणेशोत्सव २०२७ – शनिवार, ४ सप्टेंबर २०२७ पासून"
     },
     {
-      "text": "Blood donation camp on Day 5 – please register at the mandal office",
-      "textMr": "पाचव्या दिवशी रक्तदान शिबिर – मंडळ कार्यालयात नाव नोंदवा"
+      "text": "Maha Bhandara – free prasad bhojan open to everyone. All are welcome!",
+      "textMr": "महाभंडारा – सर्वांसाठी खुले मोफत महाप्रसाद भोजन. सर्वांचे स्वागत!"
     }
   ],
   "heroSlides": [
@@ -82,12 +82,12 @@
     "paragraphs": [
       "Our mandal was started in 1969 by a small group of friends from the neighbourhood who wanted to bring everyone together in the spirit of Lokmanya Tilak's Sarvajanik Ganeshotsav.",
       "What began as a small pandal on the street corner has grown into one of the most loved celebrations in the area. Every year, thousands of devotees visit for darshan, aarti and our cultural programs.",
-      "Beyond the festival, the mandal works throughout the year on social causes — blood donation camps, tree plantation, help for students and support during emergencies."
+      "Beyond the festival, the mandal serves the community — our annual Bhandara feeds 300 to 400 people every year, and we also help students and support neighbours during emergencies."
     ],
     "paragraphsMr": [
       "लोकमान्य टिळकांच्या सार्वजनिक गणेशोत्सवाच्या प्रेरणेने १९६९ साली परिसरातील काही मित्रांनी एकत्र येऊन आमच्या मंडळाची स्थापना केली.",
       "रस्त्याच्या कोपऱ्यावरील छोट्या मंडपापासून सुरू झालेला हा उत्सव आज परिसरातील सर्वात लाडका उत्सव बनला आहे. दरवर्षी हजारो भाविक दर्शन, आरती व सांस्कृतिक कार्यक्रमांसाठी येतात.",
-      "उत्सवाशिवाय वर्षभर मंडळ सामाजिक कार्यात सक्रिय असते — रक्तदान शिबिरे, वृक्षारोपण, विद्यार्थ्यांना मदत आणि आपत्कालीन सेवा."
+      "उत्सवाशिवाय मंडळ समाजसेवेत सक्रिय असते — आमच्या वार्षिक भंडाऱ्यात दरवर्षी ३०० ते ४०० जण महाप्रसादाचा लाभ घेतात; तसेच विद्यार्थ्यांना मदत व आपत्कालीन सेवा."
     ],
     "timeline": [
       {
@@ -170,10 +170,6 @@
       "textMr": "पर्यावरणपूरक गणेशोत्सव पुरस्कार – महानगरपालिका २०२३"
     },
     {
-      "text": "Blood Donation Motivation Honour – City Blood Bank 2022",
-      "textMr": "रक्तदान प्रेरणा सन्मान – शहर रक्तपेढी २०२२"
-    },
-    {
       "text": "Best Social Work Mandal – 2019",
       "textMr": "उत्कृष्ट सामाजिक कार्य मंडळ – २०१९"
     }
@@ -195,15 +191,15 @@
     }
   ],
   "about": {
-    "short": "A Sarvajanik Ganeshotsav mandal from Pune, inspired by Lokmanya Tilak, celebrating Bappa and serving the community since 1969.",
-    "shortMr": "लोकमान्य टिळकांच्या विचारांनी प्रेरित, १९६९ पासून बाप्पाचा उत्सव व समाजसेवा करणारे पुण्यातील सार्वजनिक गणेशोत्सव मंडळ."
+    "short": "A Sarvajanik Ganesh Utsav mandal from Vijay Nagar, Bandra (East), Mumbai, inspired by Lokmanya Tilak, celebrating Bappa and serving the community since 1969.",
+    "shortMr": "लोकमान्य टिळकांच्या विचारांनी प्रेरित, १९६९ पासून बाप्पाचा उत्सव व समाजसेवा करणारे विजय नगर, वांद्रे (पूर्व), मुंबई येथील सार्वजनिक गणेशोत्सव मंडळ."
   },
   "contact": {
     "phone": "+91 98765 43210",
     "whatsapp": "919876543210",
     "email": "contact@yourmandal.org",
-    "mapEmbedUrl": "https://www.google.com/maps?q=Shaniwar+Wada,+Pune&output=embed",
-    "mapLink": "https://maps.google.com/?q=Shaniwar+Wada,+Pune"
+    "mapEmbedUrl": "https://www.google.com/maps?q=Vijay+Nagar,+Bandra+East,+Mumbai,+Maharashtra+400051&output=embed",
+    "mapLink": "https://maps.google.com/?q=Vijay+Nagar,+Bandra+East,+Mumbai,+Maharashtra+400051"
   },
   "social": {
     "youtube": "https://youtube.com/",
@@ -220,11 +216,11 @@
   "donation": {
     "enabled": true,
     "upiId": "yourmandal@upi",
-    "payeeName": "Your Ganeshotsav Mandal",
+    "payeeName": "Vijay Nagar Sarvajanik Ganesh Utsav Mandal",
     "note": "You can contribute to the Utsav and to the social initiatives run by the mandal throughout the year.",
     "noteMr": "उत्सव व मंडळाच्या वर्षभरातील सामाजिक उपक्रमांसाठी आपण देणगी देऊ शकता.",
     "bank": {
-      "accountName": "Your Ganeshotsav Mandal Trust",
+      "accountName": "Vijay Nagar Sarvajanik Ganesh Utsav Mandal",
       "accountNumber": "XXXXXXXXXXXX",
       "ifsc": "XXXX0000000",
       "bankName": "Your Bank, Branch Name"

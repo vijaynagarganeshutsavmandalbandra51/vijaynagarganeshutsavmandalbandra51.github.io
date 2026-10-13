@@ -1,13 +1,62 @@
 {
   "social": [
-    { "icon": "🩸", "title": "Blood Donation Camp", "titleMr": "रक्तदान शिबिर", "text": "Held every Ganeshotsav with the city blood bank. Over 300 units collected in 2026.", "textMr": "दरवर्षी गणेशोत्सवात शहर रक्तपेढीच्या सहकार्याने. २०२६ मध्ये ३०० हून अधिक युनिट रक्त संकलन.", "image": "" },
-    { "icon": "🩺", "title": "Free Health Check-up", "titleMr": "मोफत आरोग्य तपासणी", "text": "BP, sugar and eye check-up camp with local doctors for senior citizens.", "textMr": "ज्येष्ठ नागरिकांसाठी स्थानिक डॉक्टरांच्या मदतीने रक्तदाब, शुगर व डोळे तपासणी.", "image": "" },
-    { "icon": "🌳", "title": "Tree Plantation", "titleMr": "वृक्षारोपण", "text": "Every monsoon our volunteers plant and look after trees in the neighbourhood.", "textMr": "दर पावसाळ्यात कार्यकर्ते परिसरात वृक्षारोपण व संगोपन करतात.", "image": "" },
-    { "icon": "🤝", "title": "Emergency Help", "titleMr": "आपत्कालीन मदत", "text": "Food and relief kits during floods and emergencies in and around the city.", "textMr": "पूर व आपत्तीच्या काळात अन्न व मदत साहित्याचे वाटप.", "image": "" }
+    {
+      "icon": "🍛",
+      "title": "Annual Bhandara",
+      "titleMr": "वार्षिक भंडारा",
+      "text": "Every year we hold a Bhandara open to everyone – especially the needy. A free, wholesome meal served with love to 300–400 people.",
+      "textMr": "दरवर्षी सर्वांसाठी – विशेषतः गरजूंसाठी – खुला भंडारा. ३००–४०० जणांना प्रेमाने मोफत, सात्त्विक भोजन.",
+      "image": ""
+    },
+    {
+      "icon": "🩺",
+      "title": "Free Health Check-up",
+      "titleMr": "मोफत आरोग्य तपासणी",
+      "text": "BP, sugar and eye check-up camp with local doctors for senior citizens.",
+      "textMr": "ज्येष्ठ नागरिकांसाठी स्थानिक डॉक्टरांच्या मदतीने रक्तदाब, शुगर व डोळे तपासणी.",
+      "image": ""
+    },
+    {
+      "icon": "🌳",
+      "title": "Tree Plantation",
+      "titleMr": "वृक्षारोपण",
+      "text": "Every monsoon our volunteers plant and look after trees in the neighbourhood.",
+      "textMr": "दर पावसाळ्यात कार्यकर्ते परिसरात वृक्षारोपण व संगोपन करतात.",
+      "image": ""
+    },
+    {
+      "icon": "🤝",
+      "title": "Emergency Help",
+      "titleMr": "आपत्कालीन मदत",
+      "text": "Food and relief kits during floods and emergencies in and around the city.",
+      "textMr": "पूर व आपत्तीच्या काळात अन्न व मदत साहित्याचे वाटप.",
+      "image": ""
+    }
   ],
   "educational": [
-    { "icon": "📚", "title": "Notebook Distribution", "titleMr": "वह्या वाटप", "text": "Free notebooks and school kits for students every June.", "textMr": "दर जूनमध्ये विद्यार्थ्यांना मोफत वह्या व शालेय साहित्य.", "image": "" },
-    { "icon": "🎓", "title": "Merit Felicitation", "titleMr": "गुणवंत विद्यार्थी सत्कार", "text": "SSC and HSC toppers from the area are felicitated during Ganeshotsav.", "textMr": "परिसरातील दहावी-बारावीतील गुणवंत विद्यार्थ्यांचा गणेशोत्सवात सत्कार.", "image": "" },
-    { "icon": "💻", "title": "Computer Classes", "titleMr": "संगणक वर्ग", "text": "Weekend basic computer classes for children and homemakers.", "textMr": "मुले व गृहिणींसाठी आठवड्याच्या शेवटी मूलभूत संगणक वर्ग.", "image": "" }
+    {
+      "icon": "📚",
+      "title": "Notebook Distribution",
+      "titleMr": "वह्या वाटप",
+      "text": "Free notebooks and school kits for students every June.",
+      "textMr": "दर जूनमध्ये विद्यार्थ्यांना मोफत वह्या व शालेय साहित्य.",
+      "image": ""
+    },
+    {
+      "icon": "🎓",
+      "title": "Merit Felicitation",
+      "titleMr": "गुणवंत विद्यार्थी सत्कार",
+      "text": "SSC and HSC toppers from the area are felicitated during Ganeshotsav.",
+      "textMr": "परिसरातील दहावी-बारावीतील गुणवंत विद्यार्थ्यांचा गणेशोत्सवात सत्कार.",
+      "image": ""
+    },
+    {
+      "icon": "💻",
+      "title": "Computer Classes",
+      "titleMr": "संगणक वर्ग",
+      "text": "Weekend basic computer classes for children and homemakers.",
+      "textMr": "मुले व गृहिणींसाठी आठवड्याच्या शेवटी मूलभूत संगणक वर्ग.",
+      "image": ""
+    }
   ]
 }

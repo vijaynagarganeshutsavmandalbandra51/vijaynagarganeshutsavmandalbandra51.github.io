@@ -112,7 +112,7 @@
     {
       "day": 5,
       "date": "2027-09-08",
-      "title": "Blood Donation Camp",
+      "title": "Maha Bhandara",
       "events": [
         {
           "time": "8:00 AM",
@@ -120,9 +120,11 @@
           "description": "Daily aarti with prasad"
         },
         {
-          "time": "9:00 AM",
-          "title": "Blood Donation Camp",
-          "description": "In association with the city blood bank"
+          "time": "12:30 PM",
+          "title": "Maha Bhandara",
+          "description": "Free prasad bhojan open to everyone – 300 to 400 devotees every year",
+          "titleMr": "महाभंडारा",
+          "descriptionMr": "सर्वांसाठी खुले मोफत महाप्रसाद भोजन – दरवर्षी ३०० ते ४०० भाविक"
         },
         {
           "time": "8:00 PM",
@@ -135,7 +137,7 @@
           "description": "Daily evening aarti"
         }
       ],
-      "titleMr": "रक्तदान शिबिर"
+      "titleMr": "महाभंडारा"
     },
     {
       "day": 6,
