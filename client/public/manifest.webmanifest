@@ -1,0 +1,13 @@
+{
+  "name": "Sarvajanik Ganeshotsav Mandal",
+  "short_name": "Ganeshotsav",
+  "description": "Schedule, live darshan, photos and donations of our Sarvajanik Ganeshotsav Mandal.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fffaf0",
+  "theme_color": "#1f3a68",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

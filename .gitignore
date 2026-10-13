@@ -1,0 +1,20 @@
+# Node / Angular
+client/node_modules/
+client/dist/
+client/.angular/
+
+# .NET
+server/bin/
+server/obj/
+server/wwwroot/
+*.user
+.vs/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+
+# Generated from media/years folders on every build
+client/public/data/years.json

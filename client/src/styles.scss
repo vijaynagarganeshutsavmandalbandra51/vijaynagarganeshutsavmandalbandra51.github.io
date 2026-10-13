@@ -1,0 +1,304 @@
+/* ---------------------------------------------------------------
+   Global theme for the Mandal website.
+   Change the colours here to re-theme the whole site.
+---------------------------------------------------------------- */
+:root {
+  /* Main brand colours – change these to re-theme the whole site */
+  --primary: #1f3a68; /* royal navy – top bar, footer, banners */
+  --primary-dark: #162b4f;
+  --primary-deep: #0b1830;
+  --accent: #e8731a; /* saffron – titles, buttons, badges */
+  --accent-bright: #f28c28;
+  --saffron: #e8731a;
+  --marigold: #f5b82e; /* gold – highlights, donate button */
+  --gold: #d4a017;
+  --cream: #fffaf0;
+  --cream-2: #fdf0dc;
+  --ink: #22222e;
+  --ink-soft: #5c5f6e;
+  --line: #ecdcc2;
+  --white: #ffffff;
+
+  --font-body: 'Mukta', system-ui, sans-serif;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-marathi: 'Yatra One', 'Mukta', serif;
+
+  --radius: 14px;
+  --shadow: 0 10px 30px -12px rgba(11, 24, 48, 0.25);
+  --max: 1160px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--cream);
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--saffron);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  line-height: 1.15;
+  color: var(--primary-deep);
+  margin: 0 0 0.5em;
+}
+
+/* Marathi mode: Devanagari reads better in Mukta / Yatra One than in the serif */
+html[lang='mr'] h1,
+html[lang='mr'] h2,
+html[lang='mr'] h3 {
+  font-family: var(--font-marathi);
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+}
+h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+}
+h3 {
+  font-size: 1.35rem;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 72px 0;
+}
+
+.section--tint {
+  background: var(--cream-2);
+}
+
+/* Warm festive gradients used for alternating home sections */
+.section--warm {
+  background: linear-gradient(90deg, #fefce8, #fff7ed, #fef3c7);
+}
+
+.section--blush {
+  background: linear-gradient(180deg, #fff7ed, #ffffff);
+}
+
+.section--glow {
+  background: linear-gradient(135deg, #ffedd5, #ffffff);
+}
+
+.section-title {
+  color: var(--accent);
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 0.3em;
+}
+
+.marathi {
+  font-family: var(--font-marathi);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-marathi);
+  color: var(--saffron);
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.section-head {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 44px;
+
+  p {
+    color: var(--ink-soft);
+  }
+}
+
+.divider {
+  width: 120px;
+  height: 14px;
+  margin: 10px auto 18px;
+  background:
+    radial-gradient(circle, var(--marigold) 3px, transparent 4px) center / 14px 14px repeat-x;
+}
+
+.grid {
+  display: grid;
+  gap: 22px;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font: 600 1rem var(--font-body);
+  text-decoration: none;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &--primary {
+    background: var(--accent);
+    color: var(--white);
+
+    &:hover {
+      background: var(--primary);
+    }
+  }
+
+  &--ghost {
+    background: transparent;
+    border-color: currentColor;
+    color: inherit;
+  }
+
+  &--light {
+    background: var(--cream);
+    color: var(--primary);
+  }
+}
+
+/* Scroll reveal (see shared/reveal.directive.ts) */
+.reveal {
+  opacity: 0;
+  transition: opacity 0.7s ease, transform 0.7s ease;
+  will-change: opacity, transform;
+}
+.reveal--up {
+  transform: translateY(32px);
+}
+.reveal--zoom {
+  transform: scale(0.94);
+}
+.reveal--left {
+  transform: translateX(-40px);
+}
+.reveal--right {
+  transform: translateX(40px);
+}
+.reveal.reveal--in {
+  opacity: 1;
+  transform: none;
+}
+
+.loading {
+  padding: 80px 0;
+  text-align: center;
+  color: var(--ink-soft);
+}
+
+:focus-visible {
+  outline: 3px solid var(--marigold);
+  outline-offset: 2px;
+}
+
+/* ---------------------------------------------------------------
+   PHONES FIRST – most visitors open the site on a mobile phone
+---------------------------------------------------------------- */
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  /* 'clip' (not 'hidden') so the sticky top bar keeps working */
+  overflow-x: clip;
+  -webkit-tap-highlight-color: rgba(232, 115, 26, 0.15);
+}
+
+@media (max-width: 900px) {
+  /* room for the bottom tab bar */
+  body {
+    padding-bottom: calc(68px + env(safe-area-inset-bottom));
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+  .container {
+    padding: 0 16px;
+  }
+  .section {
+    padding: 44px 0;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.65rem;
+  }
+  h3 {
+    font-size: 1.15rem;
+  }
+  .btn {
+    min-height: 46px;
+    padding: 11px 20px;
+  }
+  /* hover lifts feel odd on touch screens */
+  .btn:hover {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

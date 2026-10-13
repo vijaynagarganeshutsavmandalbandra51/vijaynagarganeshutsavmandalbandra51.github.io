@@ -1,0 +1,38 @@
+{
+  "year": "2027",
+  "note": "Placeholder names – replace with the real committee. 'nameMr' / 'roleMr' = Marathi. 'photo' = images/committee/<file>.jpg (leave empty to show initials).",
+
+  "committee": {
+    "title": "Committee Members",
+    "titleMr": "कार्यकारिणी सदस्य",
+    "members": [
+      { "name": "Member Name", "nameMr": "", "role": "President", "roleMr": "अध्यक्ष", "photo": "", "phone": "" },
+      { "name": "Member Name", "nameMr": "", "role": "Vice President", "roleMr": "उपाध्यक्ष", "photo": "", "phone": "" },
+      { "name": "Member Name", "nameMr": "", "role": "Secretary", "roleMr": "सचिव", "photo": "", "phone": "" },
+      { "name": "Member Name", "nameMr": "", "role": "Joint Secretary", "roleMr": "सहसचिव", "photo": "", "phone": "" },
+      { "name": "Member Name", "nameMr": "", "role": "Treasurer", "roleMr": "खजिनदार", "photo": "", "phone": "" },
+      { "name": "Member Name", "nameMr": "", "role": "Joint Treasurer", "roleMr": "सहखजिनदार", "photo": "", "phone": "" },
+      { "name": "Member Name", "nameMr": "", "role": "Member", "roleMr": "सदस्य", "photo": "", "phone": "" },
+      { "name": "Member Name", "nameMr": "", "role": "Member", "roleMr": "सदस्य", "photo": "", "phone": "" }
+    ]
+  },
+
+  "helpers": {
+    "title": "Helpers",
+    "titleMr": "",
+    "members": [
+      { "name": "Helper Name", "nameMr": "", "role": "", "roleMr": "", "photo": "" },
+      { "name": "Helper Name", "nameMr": "", "role": "", "roleMr": "", "photo": "" },
+      { "name": "Helper Name", "nameMr": "", "role": "", "roleMr": "", "photo": "" },
+      { "name": "Helper Name", "nameMr": "", "role": "", "roleMr": "", "photo": "" },
+      { "name": "Helper Name", "nameMr": "", "role": "", "roleMr": "", "photo": "" },
+      { "name": "Helper Name", "nameMr": "", "role": "", "roleMr": "", "photo": "" },
+      { "name": "Helper Name", "nameMr": "", "role": "", "roleMr": "", "photo": "" },
+      { "name": "Helper Name", "nameMr": "", "role": "", "roleMr": "", "photo": "" },
+      { "name": "Helper Name", "nameMr": "", "role": "", "roleMr": "", "photo": "" },
+      { "name": "Helper Name", "nameMr": "", "role": "", "roleMr": "", "photo": "" },
+      { "name": "Helper Name", "nameMr": "", "role": "", "roleMr": "", "photo": "" },
+      { "name": "Helper Name", "nameMr": "", "role": "", "roleMr": "", "photo": "" }
+    ]
+  }
+}

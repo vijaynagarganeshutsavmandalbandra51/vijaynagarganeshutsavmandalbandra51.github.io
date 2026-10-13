@@ -1,0 +1,74 @@
+<header class="bar">
+  <div class="bar__inner">
+    <a routerLink="/" class="brand" (click)="closeAll()">
+      <img [src]="mandal()?.logo || 'images/logo.svg'" alt="" width="50" height="50" />
+      <span class="brand__text">
+        <span class="brand__name">{{ i18n.tr(mandal(), 'name') }}</span>
+        <span class="brand__sub">{{ i18n.t('established') }} {{ i18n.digits(mandal()?.established ?? '') }}</span>
+      </span>
+    </a>
+
+    <nav id="site-nav" class="nav" [class.nav--open]="menuOpen()" aria-label="Main">
+      @for (item of items; track item.label) {
+        @if (isGroup(item)) {
+          <div class="group" [class.group--open]="openGroup() === item.label">
+            <button
+              type="button"
+              class="nav__link group__btn"
+              [attr.aria-expanded]="openGroup() === item.label"
+              (click)="toggleGroup(item.label, $event)"
+            >
+              {{ i18n.t(item.label) }} <span class="caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="dropdown" (click)="$event.stopPropagation()">
+              @for (child of item.children; track child.label) {
+                <a
+                  [routerLink]="child.path"
+                  [fragment]="child.fragment"
+                  [queryParams]="child.queryParams"
+                  routerLinkActive="active"
+                  [routerLinkActiveOptions]="{ exact: false }"
+                  (click)="closeAll()"
+                  >{{ i18n.t(child.label) }}</a
+                >
+              }
+            </div>
+          </div>
+        } @else {
+          <a
+            class="nav__link"
+            [routerLink]="item.path"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: item.path === '/' }"
+            (click)="closeAll()"
+            >{{ i18n.t(item.label) }}</a
+          >
+        }
+      }
+      <a routerLink="/contact" fragment="donate" class="donate-btn" (click)="closeAll()">{{ i18n.t('donate') }}</a>
+    </nav>
+
+    <div class="tools">
+      <button
+        type="button"
+        class="lang"
+        (click)="i18n.toggle()"
+        [attr.aria-label]="i18n.isMr() ? 'Switch to English' : 'मराठीत पहा'"
+        [title]="i18n.isMr() ? 'Switch to English' : 'मराठीत पहा'"
+      >
+        <span aria-hidden="true">🌐</span> {{ i18n.isMr() ? 'EN' : 'मराठी' }}
+      </button>
+
+      <button
+        class="menu-btn"
+        type="button"
+        (click)="toggleMenu()"
+        [attr.aria-expanded]="menuOpen()"
+        aria-controls="site-nav"
+        aria-label="Toggle menu"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>

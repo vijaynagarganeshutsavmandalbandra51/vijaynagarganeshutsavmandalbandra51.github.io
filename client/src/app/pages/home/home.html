@@ -1,0 +1,256 @@
+@if (mandal(); as m) {
+  <!-- ================= HERO SLIDER ================= -->
+  <section
+    class="hero"
+    aria-roledescription="carousel"
+    aria-label="Highlights"
+    (mouseenter)="pauseSlider(true)"
+    (mouseleave)="pauseSlider(false)"
+    appSwipe
+    (swipeLeft)="nextSlide()"
+    (swipeRight)="prevSlide()"
+  >
+    @for (s of m.heroSlides; track s.image; let i = $index) {
+      <div class="hero__slide" [class.hero__slide--active]="i === slide()" [attr.aria-hidden]="i !== slide()">
+        <img [src]="s.image" [alt]="i18n.tr(s, 'title')" [attr.loading]="i === 0 ? 'eager' : 'lazy'" />
+        <div class="hero__caption container">
+          <span class="hero__om marathi">|| श्री गणेशाय नमः ||</span>
+          <h1>{{ i18n.tr(s, 'title') }}</h1>
+          @if (s.subtitle) {
+            <p>{{ i18n.tr(s, 'subtitle') }}</p>
+          }
+        </div>
+      </div>
+    }
+
+    @if (m.heroSlides.length > 1) {
+      <button type="button" class="hero__arrow hero__arrow--prev" (click)="prevSlide()" aria-label="Previous slide">‹</button>
+      <button type="button" class="hero__arrow hero__arrow--next" (click)="nextSlide()" aria-label="Next slide">›</button>
+      <div class="hero__dots">
+        @for (s of m.heroSlides; track s.image; let i = $index) {
+          <button type="button" [class.on]="i === slide()" (click)="goSlide(i)" [attr.aria-label]="'Slide ' + (i + 1)"></button>
+        }
+      </div>
+    }
+  </section>
+
+  <!-- ================= COUNTDOWN BAND ================= -->
+  <section class="band">
+    <div class="container band__inner">
+      @if (countdown(); as c) {
+        <div class="band__label">
+          <strong>{{ i18n.t('bappaComing') }}</strong>
+          <span>{{ m.festival.startDate | date: 'EEEE, d MMMM y' : undefined : i18n.locale() }}</span>
+        </div>
+        <div class="countdown">
+          <div><b>{{ c.days }}</b><span>{{ i18n.t('days') }}</span></div>
+          <div><b>{{ pad(c.hours) }}</b><span>{{ i18n.t('hours') }}</span></div>
+          <div><b>{{ pad(c.minutes) }}</b><span>{{ i18n.t('minutes') }}</span></div>
+          <div><b>{{ pad(c.seconds) }}</b><span>{{ i18n.t('seconds') }}</span></div>
+        </div>
+      } @else if (ongoing(); as o) {
+        <div class="band__label">
+          <strong>{{ i18n.t('utsavOn') }}</strong>
+          <span>{{ i18n.t('dayOf') }} {{ o.dayNumber }} / {{ o.totalDays }}</span>
+        </div>
+        <div class="band__actions">
+          <a routerLink="/live" class="btn btn--light">🔴 {{ i18n.t('watchLive') }}</a>
+          <a routerLink="/schedule" class="btn btn--ghost">{{ i18n.t('todaysPrograms') }}</a>
+        </div>
+      } @else {
+        <div class="band__label">
+          <strong>{{ i18n.t('seeYou') }}</strong>
+        </div>
+        <a routerLink="/gallery" class="btn btn--light">{{ i18n.t('viewGallery') }}</a>
+      }
+    </div>
+  </section>
+
+  <!-- ================= FEATURED VIDEO ================= -->
+  @if (m.featuredVideo; as fv) {
+    <section class="section section--warm">
+      <div class="container narrow" appReveal>
+        <h2 class="section-title">{{ i18n.tr(fv, 'title') }}</h2>
+        @if (fv.text) {
+          <p class="lead">{{ i18n.tr(fv, 'text') }}</p>
+        }
+        <app-youtube [videoId]="fv.youtubeId" [title]="i18n.tr(fv, 'title')" />
+      </div>
+    </section>
+  }
+
+  <!-- ================= HISTORY ================= -->
+  <section class="section section--blush">
+    <div class="container history">
+      <div class="history__img" appReveal="left">
+        <img [src]="m.history.image" [alt]="i18n.t('history')" loading="lazy" />
+        <span class="history__badge">{{ i18n.t('established') }}<b>{{ i18n.digits(m.established) }}</b></span>
+      </div>
+      <div class="history__text" appReveal="right">
+        <h2 class="section-title left">{{ i18n.t('history') }}</h2>
+        @for (p of i18n.trList(m.history, 'paragraphs'); track $index) {
+          <p>{{ p }}</p>
+        }
+        <a routerLink="/about" class="btn btn--primary">{{ i18n.t('readMore') }} →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= AARTI & DARSHAN ================= -->
+  <section class="section section--warm aarti-section">
+    <div class="container" appReveal>
+      <h2 class="section-title">{{ i18n.t('aartiTimings') }}</h2>
+      <div class="aarti">
+        @for (a of m.aartiTimings; track a.label) {
+          <div class="aarti__item">
+            <span class="aarti__icon" aria-hidden="true">🪔</span>
+            <h3>{{ i18n.tr(a, 'label') }}</h3>
+            <p>{{ a.time }}</p>
+          </div>
+        }
+      </div>
+      @if (m.festival.theme) {
+        <p class="theme-note">✦ {{ i18n.tr(m.festival, 'theme') }} ✦</p>
+      }
+    </div>
+  </section>
+
+  <!-- ================= VIDEO SECTIONS ================= -->
+  @for (v of homeVideos(); track v.title; let i = $index) {
+    <section class="section" [class]="videoBg(i)">
+      <div class="container narrow" appReveal>
+        <h2 class="section-title">{{ i18n.tr(v, 'title') }}</h2>
+        @if (v.text) {
+          <p class="lead">{{ i18n.tr(v, 'text') }}</p>
+        }
+        <app-youtube [videoId]="v.youtubeId" [title]="i18n.tr(v, 'title')" />
+      </div>
+    </section>
+  }
+
+  <!-- ================= BAPPA THROUGH THE YEARS ================= -->
+  @if (recentYears().length) {
+    <section class="section years-section">
+      <div class="container">
+        <h2 class="section-title" appReveal>{{ i18n.t('years') }}</h2>
+        <p class="lead" appReveal>
+          {{ i18n.isMr() ? i18n.digits(m.firstUtsavYear ?? m.established) + ' पासून दरवर्षीचा आमचा बाप्पा' : 'Our Bappa every year since ' + (m.firstUtsavYear ?? m.established) }}
+        </p>
+        <div class="years-strip">
+          @for (y of recentYears(); track y.year) {
+            <a class="year-card" [routerLink]="['/years', y.year]" appReveal="zoom">
+              @if (y.cover) {
+                <img [src]="y.cover" [alt]="'Ganpati ' + y.year" loading="lazy" />
+              }
+              <span class="year-card__info">
+                <b>{{ i18n.digits(y.year) }}</b>
+                <small>{{ i18n.edition(y.edition) }}</small>
+              </span>
+            </a>
+          }
+        </div>
+        <div class="center">
+          <a routerLink="/years" class="btn btn--primary">{{ i18n.t('allYears') }} →</a>
+        </div>
+      </div>
+    </section>
+  }
+
+  <!-- ================= GALLERY PREVIEW ================= -->
+  @if (galleryPreview().length) {
+    <section class="section gallery-section">
+      <div class="container">
+        <h2 class="section-title" appReveal>{{ i18n.t('photoGallery') }}</h2>
+        <div class="masonry">
+          @for (g of galleryPreview(); track g.src) {
+            <a routerLink="/gallery" class="masonry__item" appReveal="zoom">
+              <img [src]="g.src" [alt]="i18n.tr(g, 'caption') || 'Ganpati ' + g.year" loading="lazy" />
+            </a>
+          }
+        </div>
+        <div class="center">
+          <a routerLink="/gallery" class="btn btn--primary">{{ i18n.t('viewGallery') }}</a>
+        </div>
+      </div>
+    </section>
+  }
+
+  <!-- ================= COMMITTEE MEMBERS + HELPERS ================= -->
+  @if (committee(); as c) {
+    <section class="section section--blush">
+      <div class="container">
+        <h2 class="section-title" appReveal>{{ i18n.tr(c.committee, 'title') }}</h2>
+        <app-people-grid [people]="c.committee.members" />
+
+        @if (c.helpers?.members?.length) {
+          <h3 class="sub-title" appReveal>{{ i18n.tr(c.helpers, 'title') }}</h3>
+          <app-people-grid [people]="c.helpers!.members" variant="compact" />
+        }
+
+        <div class="center">
+          <a routerLink="/committee" class="btn btn--primary">{{ i18n.t('viewCommittee') }} →</a>
+        </div>
+      </div>
+    </section>
+  }
+
+  <!-- ================= AWARDS CAROUSEL ================= -->
+  @if (m.awards.length) {
+    <section class="section section--warm">
+      <div class="container narrow" appReveal>
+        <h2 class="section-title">🏆 {{ i18n.t('awards') }}</h2>
+        <div class="awards" appSwipe (swipeLeft)="nextAward()" (swipeRight)="goAward(award() - 1)">
+          <div class="awards__track" [style.transform]="'translateX(-' + award() * 100 + '%)'">
+            @for (a of m.awards; track $index) {
+              <div class="awards__slide">
+                <div class="awards__card">{{ i18n.tr(a, 'text') }}</div>
+              </div>
+            }
+          </div>
+        </div>
+        <div class="awards__dots">
+          @for (a of m.awards; track $index; let i = $index) {
+            <button type="button" [class.on]="i === award()" (click)="goAward(i)" [attr.aria-label]="'Award ' + (i + 1)"></button>
+          }
+        </div>
+      </div>
+    </section>
+  }
+
+  <!-- ================= DONATION CTA ================= -->
+  @if (m.donation.enabled) {
+    <section class="section section--warm donate-cta">
+      <div class="container narrow" appReveal="zoom">
+        <h2 class="section-title">{{ i18n.t('donation') }}</h2>
+        <p class="lead">{{ i18n.tr(m.donation, 'note') }}</p>
+        <a routerLink="/contact" fragment="donate" class="btn btn--primary btn--big">🙏 {{ i18n.t('donateNow') }}</a>
+      </div>
+    </section>
+  }
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section contact-section">
+    <div class="container">
+      <h2 class="section-title" appReveal>{{ i18n.t('contactUs') }}</h2>
+      <div class="contact" appReveal>
+        <div class="contact__info">
+          @if (m.contact.phone) {
+            <a class="contact__row" [href]="'tel:' + m.contact.phone"><span aria-hidden="true">📞</span>{{ m.contact.phone }}</a>
+          }
+          @if (m.contact.email) {
+            <a class="contact__row" [href]="'mailto:' + m.contact.email"><span aria-hidden="true">✉️</span>{{ m.contact.email }}</a>
+          }
+          <div class="contact__row"><span aria-hidden="true">📍</span>{{ i18n.tr(m, 'address') }}</div>
+          @if (m.contact.mapLink) {
+            <a class="btn btn--primary" [href]="m.contact.mapLink" target="_blank" rel="noopener">{{ i18n.t('getDirections') }} →</a>
+          }
+        </div>
+        @if (mapUrl(); as url) {
+          <iframe class="contact__map" [src]="url" title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        }
+      </div>
+    </div>
+  </section>
+} @else {
+  <p class="loading">Loading…</p>
+}

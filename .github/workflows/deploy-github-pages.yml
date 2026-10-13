@@ -1,0 +1,62 @@
+# Builds the Angular site and publishes it to GitHub Pages on every push to main.
+# One-time setup: GitHub repo -> Settings -> Pages -> Source: "GitHub Actions".
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: client
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: client/package-lock.json
+
+      - run: npm ci
+
+      # Repo named <owner>.github.io (or a custom domain) -> site lives at the root: base href "/"
+      # Any other repo name -> https://<owner>.github.io/<repo-name>/  -> base href "/<repo-name>/"
+      # "npm run build:github" first scans public/media/years/* and writes data/years.json
+      - name: Build
+        env:
+          REPO: ${{ github.event.repository.name }}
+        run: |
+          if [[ "$REPO" == *.github.io ]]; then BASE="/"; else BASE="/$REPO/"; fi
+          echo "Building with base href $BASE"
+          npm run build:github -- --base-href "$BASE"
+
+      # GitHub Pages has no server-side routing: serve index.html for unknown URLs like /schedule
+      - run: cp dist/client/browser/index.html dist/client/browser/404.html
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: client/dist/client/browser
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

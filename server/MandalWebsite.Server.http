@@ -1,0 +1,9 @@
+@host = http://localhost:5000
+
+GET {{host}}/api/health
+
+###
+GET {{host}}/api/content/mandal
+
+###
+GET {{host}}/api/content/schedule

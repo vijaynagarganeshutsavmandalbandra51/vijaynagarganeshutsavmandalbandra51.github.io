@@ -1,0 +1,41 @@
+{
+  "note": "youtubeId = the part after 'watch?v=' in the YouTube link. Leave it empty to show a placeholder. 'showOnHome': true puts the video on the home page.",
+  "videos": [
+    {
+      "title": "Visarjan Ceremony 2026",
+      "titleMr": "विसर्जन सोहळा २०२६",
+      "text": "Relive the grand visarjan procession with dhol-tasha, lezim and thousands of devotees.",
+      "textMr": "ढोल-ताशा, लेझीम आणि हजारो भाविकांसह भव्य विसर्जन मिरवणूक पुन्हा अनुभवा.",
+      "year": "2026",
+      "youtubeId": "",
+      "showOnHome": true
+    },
+    {
+      "title": "Decoration Theme 2026",
+      "titleMr": "देखावा २०२६",
+      "text": "A walkthrough of this year's decoration created by our volunteers over 45 days.",
+      "textMr": "आमच्या कार्यकर्त्यांनी ४५ दिवस मेहनत घेऊन साकारलेला यंदाचा देखावा.",
+      "year": "2026",
+      "youtubeId": "",
+      "showOnHome": true
+    },
+    {
+      "title": "Padyapoojan Ceremony 2026",
+      "titleMr": "पाद्यपूजन सोहळा २०२६",
+      "text": "The padyapoojan ceremony marks the beginning of the festival preparations.",
+      "textMr": "पाद्यपूजनाने उत्सवाच्या तयारीला मंगल सुरुवात झाली.",
+      "year": "2026",
+      "youtubeId": "",
+      "showOnHome": true
+    },
+    {
+      "title": "Aagman Sohala 2025",
+      "titleMr": "आगमन सोहळा २०२५",
+      "text": "Bappa's arrival procession from the murtikar's workshop.",
+      "textMr": "मूर्तिकारांच्या कार्यशाळेतून बाप्पाची आगमन मिरवणूक.",
+      "year": "2025",
+      "youtubeId": "",
+      "showOnHome": false
+    }
+  ]
+}

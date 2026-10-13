@@ -1,0 +1,300 @@
+{
+  "year": 2027,
+  "note": "Timings may change slightly. Please follow our Instagram / WhatsApp for live updates.",
+  "days": [
+    {
+      "day": 1,
+      "date": "2027-09-04",
+      "title": "Ganesh Chaturthi – Pranapratishtha",
+      "events": [
+        {
+          "time": "10:00 AM",
+          "title": "Pranapratishtha Puja",
+          "description": "Installation of Bappa with vedic rituals"
+        },
+        {
+          "time": "12:30 PM",
+          "title": "Maha Prasad",
+          "description": "Modak prasad for all devotees"
+        },
+        {
+          "time": "8:30 PM",
+          "title": "Maha Aarti",
+          "description": "First evening aarti with dhol-tasha pathak"
+        }
+      ],
+      "titleMr": "श्री गणेश प्रतिष्ठापना"
+    },
+    {
+      "day": 2,
+      "date": "2027-09-05",
+      "title": "Rangoli & Drawing Day",
+      "events": [
+        {
+          "time": "8:00 AM",
+          "title": "Morning Aarti",
+          "description": "Daily aarti with prasad"
+        },
+        {
+          "time": "4:00 PM",
+          "title": "Rangoli Competition",
+          "description": "Open for all ages – register at the mandal desk"
+        },
+        {
+          "time": "6:00 PM",
+          "title": "Kids Drawing Competition",
+          "description": "Theme: My Eco-friendly Bappa"
+        },
+        {
+          "time": "8:30 PM",
+          "title": "Evening Aarti",
+          "description": "Daily evening aarti"
+        }
+      ],
+      "titleMr": "रांगोळी व चित्रकला स्पर्धा"
+    },
+    {
+      "day": 3,
+      "date": "2027-09-06",
+      "title": "Health Camp",
+      "events": [
+        {
+          "time": "8:00 AM",
+          "title": "Morning Aarti",
+          "description": "Daily aarti with prasad"
+        },
+        {
+          "time": "9:00 AM",
+          "title": "Free Health Check-up",
+          "description": "BP, sugar and eye check-up with local doctors"
+        },
+        {
+          "time": "7:00 PM",
+          "title": "Bhajan Sandhya",
+          "description": "Devotional songs by local bhajan mandal"
+        },
+        {
+          "time": "8:30 PM",
+          "title": "Evening Aarti",
+          "description": "Daily evening aarti"
+        }
+      ],
+      "titleMr": "आरोग्य शिबिर"
+    },
+    {
+      "day": 4,
+      "date": "2027-09-07",
+      "title": "Gauri Avahan",
+      "events": [
+        {
+          "time": "8:00 AM",
+          "title": "Morning Aarti",
+          "description": "Daily aarti with prasad"
+        },
+        {
+          "time": "11:00 AM",
+          "title": "Gauri Puja",
+          "description": "Special puja for Gauri arrival"
+        },
+        {
+          "time": "7:00 PM",
+          "title": "Haldi-Kunku",
+          "description": "Haldi-kunku program for women of the area"
+        },
+        {
+          "time": "8:30 PM",
+          "title": "Evening Aarti",
+          "description": "Daily evening aarti"
+        }
+      ],
+      "titleMr": "गौरी आवाहन"
+    },
+    {
+      "day": 5,
+      "date": "2027-09-08",
+      "title": "Blood Donation Camp",
+      "events": [
+        {
+          "time": "8:00 AM",
+          "title": "Morning Aarti",
+          "description": "Daily aarti with prasad"
+        },
+        {
+          "time": "9:00 AM",
+          "title": "Blood Donation Camp",
+          "description": "In association with the city blood bank"
+        },
+        {
+          "time": "8:00 PM",
+          "title": "Quiz Night",
+          "description": "Quiz on Maharashtra history and culture"
+        },
+        {
+          "time": "8:30 PM",
+          "title": "Evening Aarti",
+          "description": "Daily evening aarti"
+        }
+      ],
+      "titleMr": "रक्तदान शिबिर"
+    },
+    {
+      "day": 6,
+      "date": "2027-09-09",
+      "title": "Cultural Evening",
+      "events": [
+        {
+          "time": "8:00 AM",
+          "title": "Morning Aarti",
+          "description": "Daily aarti with prasad"
+        },
+        {
+          "time": "6:00 PM",
+          "title": "Dance Competition",
+          "description": "Group and solo dance performances"
+        },
+        {
+          "time": "8:30 PM",
+          "title": "Evening Aarti",
+          "description": "Daily evening aarti"
+        },
+        {
+          "time": "9:00 PM",
+          "title": "Drama",
+          "description": "Marathi natak by youth members"
+        }
+      ],
+      "titleMr": "सांस्कृतिक संध्या"
+    },
+    {
+      "day": 7,
+      "date": "2027-09-10",
+      "title": "Satyanarayan Puja",
+      "events": [
+        {
+          "time": "8:00 AM",
+          "title": "Morning Aarti",
+          "description": "Daily aarti with prasad"
+        },
+        {
+          "time": "10:00 AM",
+          "title": "Satyanarayan Puja",
+          "description": "Puja followed by tirth-prasad"
+        },
+        {
+          "time": "7:30 PM",
+          "title": "Kirtan",
+          "description": "Kirtan by a guest kirtankar"
+        },
+        {
+          "time": "8:30 PM",
+          "title": "Evening Aarti",
+          "description": "Daily evening aarti"
+        }
+      ],
+      "titleMr": "सत्यनारायण पूजा"
+    },
+    {
+      "day": 8,
+      "date": "2027-09-11",
+      "title": "Atharvashirsha Pathan",
+      "events": [
+        {
+          "time": "7:00 AM",
+          "title": "Sahasra Atharvashirsha Pathan",
+          "description": "Group recitation – everyone welcome"
+        },
+        {
+          "time": "8:00 AM",
+          "title": "Morning Aarti",
+          "description": "Daily aarti with prasad"
+        },
+        {
+          "time": "7:00 PM",
+          "title": "Singing Competition",
+          "description": "Natyasangeet & bhavgeet"
+        },
+        {
+          "time": "8:30 PM",
+          "title": "Evening Aarti",
+          "description": "Daily evening aarti"
+        }
+      ],
+      "titleMr": "अथर्वशीर्ष पठण"
+    },
+    {
+      "day": 9,
+      "date": "2027-09-12",
+      "title": "Mahaprasad",
+      "events": [
+        {
+          "time": "8:00 AM",
+          "title": "Morning Aarti",
+          "description": "Daily aarti with prasad"
+        },
+        {
+          "time": "12:00 PM",
+          "title": "Mahaprasad",
+          "description": "Community lunch for the whole neighbourhood"
+        },
+        {
+          "time": "8:00 PM",
+          "title": "Prize Distribution",
+          "description": "Prizes for all competitions"
+        },
+        {
+          "time": "8:30 PM",
+          "title": "Evening Aarti",
+          "description": "Daily evening aarti"
+        }
+      ],
+      "titleMr": "महाप्रसाद"
+    },
+    {
+      "day": 10,
+      "date": "2027-09-13",
+      "title": "Uttar Puja",
+      "events": [
+        {
+          "time": "8:00 AM",
+          "title": "Morning Aarti",
+          "description": "Daily aarti with prasad"
+        },
+        {
+          "time": "8:00 PM",
+          "title": "Uttar Puja",
+          "description": "Final puja before visarjan"
+        },
+        {
+          "time": "8:30 PM",
+          "title": "Evening Aarti",
+          "description": "Daily evening aarti"
+        }
+      ],
+      "titleMr": "उत्तर पूजा"
+    },
+    {
+      "day": 11,
+      "date": "2027-09-14",
+      "title": "Anant Chaturdashi – Visarjan",
+      "events": [
+        {
+          "time": "8:00 AM",
+          "title": "Morning Aarti",
+          "description": "Daily aarti with prasad"
+        },
+        {
+          "time": "4:00 PM",
+          "title": "Visarjan Procession",
+          "description": "Procession with dhol-tasha, lezim and eco-friendly gulal"
+        },
+        {
+          "time": "10:00 PM",
+          "title": "Visarjan",
+          "description": "Visarjan at the artificial tank – पुढच्या वर्षी लवकर या!"
+        }
+      ],
+      "titleMr": "विसर्जन मिरवणूक"
+    }
+  ],
+  "noteMr": "वेळेत थोडा बदल होऊ शकतो. ताज्या माहितीसाठी आमचे Instagram / WhatsApp पहा."
+}

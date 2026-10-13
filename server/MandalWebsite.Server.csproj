@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <!-- Change to net8.0 or net9.0 if that is the .NET SDK installed on your laptop. -->
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>MandalWebsite.Server</RootNamespace>
+    <ClientDir>$(MSBuildProjectDirectory)/../client/</ClientDir>
+  </PropertyGroup>
+
+  <!--
+    The Angular app is built into ./wwwroot.
+    If wwwroot/index.html does not exist yet, `dotnet run` / `dotnet build`
+    builds the Angular client automatically (needs Node.js installed).
+    To rebuild the client after changing it, run: npm run build:server (inside /client).
+  -->
+  <Target Name="BuildAngularClient" BeforeTargets="Build" Condition="!Exists('$(MSBuildProjectDirectory)/wwwroot/index.html')">
+    <Message Importance="high" Text="wwwroot is empty – building the Angular client (first run only)..." />
+    <Exec Command="npm install" WorkingDirectory="$(ClientDir)" Condition="!Exists('$(ClientDir)node_modules')" />
+    <Exec Command="npm run build:server" WorkingDirectory="$(ClientDir)" />
+  </Target>
+
+</Project>

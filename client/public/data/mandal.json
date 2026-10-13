@@ -1,0 +1,233 @@
+{
+  "shortName": "VNSGM",
+  "name": "Your Sarvajanik Ganeshotsav Mandal",
+  "nameMr": "सार्वजनिक गणेशोत्सव मंडळ",
+  "tagline": "Celebrating devotion, unity and culture every year",
+  "taglineMr": "गणपती बाप्पा मोरया, मंगलमूर्ती मोरया!",
+  "established": 1969,
+  "firstUtsavYear": 1969,
+  "logo": "images/logo.svg",
+  "address": "Mandal Chowk, Main Road, Pune, Maharashtra 411001",
+  "addressMr": "मंडळ चौक, मुख्य रस्ता, पुणे, महाराष्ट्र ४११००१",
+  "marquee": [
+    {
+      "text": "Your Sarvajanik Ganeshotsav Mandal, Pune | Established 1969 | 59th year of Ganeshotsav in 2027",
+      "textMr": "सार्वजनिक गणेशोत्सव मंडळ, पुणे | स्थापना १९६९ | २०२७ – उत्सवाचे ५९ वे वर्ष"
+    },
+    {
+      "text": "Ganeshotsav 2027 begins on Saturday, 4 September 2027",
+      "textMr": "गणेशोत्सव २०२७ – शनिवार, ४ सप्टेंबर २०२७ पासून"
+    },
+    {
+      "text": "Blood donation camp on Day 5 – please register at the mandal office",
+      "textMr": "पाचव्या दिवशी रक्तदान शिबिर – मंडळ कार्यालयात नाव नोंदवा"
+    }
+  ],
+  "heroSlides": [
+    {
+      "image": "images/slides/slide-1.svg",
+      "title": "Ganpati Bappa Morya!",
+      "titleMr": "गणपती बाप्पा मोरया!",
+      "subtitle": "Welcome to the official website of our mandal",
+      "subtitleMr": "आमच्या मंडळाच्या अधिकृत संकेतस्थळावर आपले स्वागत"
+    },
+    {
+      "image": "images/slides/slide-2.svg",
+      "title": "58 glorious years",
+      "titleMr": "५८ वर्षांची गौरवशाली परंपरा",
+      "subtitle": "Celebrating Bappa together since 1969 · 2027 is our 59th year",
+      "subtitleMr": "१९६९ पासून एकत्र बाप्पाचा उत्सव · २०२७ – ५९ वे वर्ष"
+    },
+    {
+      "image": "images/slides/slide-3.svg",
+      "title": "Eco-friendly Ganeshotsav",
+      "titleMr": "पर्यावरणपूरक गणेशोत्सव",
+      "subtitle": "Shadu clay idol · Zero plastic · Artificial tank visarjan",
+      "subtitleMr": "शाडू मातीची मूर्ती · प्लास्टिकमुक्त · कृत्रिम हौद विसर्जन"
+    }
+  ],
+  "festival": {
+    "year": 2027,
+    "startDate": "2027-09-04T10:00:00+05:30",
+    "visarjanDate": "2027-09-14T16:00:00+05:30",
+    "theme": "Eco-friendly Ganeshotsav — Shadu clay idol, zero plastic",
+    "themeMr": "पर्यावरणपूरक गणेशोत्सव — शाडू मातीची मूर्ती, प्लास्टिकमुक्त"
+  },
+  "aartiTimings": [
+    {
+      "label": "Morning Aarti",
+      "labelMr": "सकाळची आरती",
+      "time": "8:00 AM"
+    },
+    {
+      "label": "Evening Aarti",
+      "labelMr": "संध्याकाळची आरती",
+      "time": "8:30 PM"
+    },
+    {
+      "label": "Darshan Hours",
+      "labelMr": "दर्शन वेळ",
+      "time": "6:00 AM – 11:30 PM"
+    }
+  ],
+  "featuredVideo": {
+    "title": "The Grace of Our Bappa",
+    "titleMr": "आमच्या बाप्पाचे तेज",
+    "text": "Watch the arrival and pranapratishtha of our Bappa. Add your own YouTube video ID in mandal.json → featuredVideo.youtubeId.",
+    "textMr": "आमच्या बाप्पाचे आगमन आणि प्राणप्रतिष्ठा पहा.",
+    "youtubeId": ""
+  },
+  "history": {
+    "image": "images/history.svg",
+    "paragraphs": [
+      "Our mandal was started in 1969 by a small group of friends from the neighbourhood who wanted to bring everyone together in the spirit of Lokmanya Tilak's Sarvajanik Ganeshotsav.",
+      "What began as a small pandal on the street corner has grown into one of the most loved celebrations in the area. Every year, thousands of devotees visit for darshan, aarti and our cultural programs.",
+      "Beyond the festival, the mandal works throughout the year on social causes — blood donation camps, tree plantation, help for students and support during emergencies."
+    ],
+    "paragraphsMr": [
+      "लोकमान्य टिळकांच्या सार्वजनिक गणेशोत्सवाच्या प्रेरणेने १९६९ साली परिसरातील काही मित्रांनी एकत्र येऊन आमच्या मंडळाची स्थापना केली.",
+      "रस्त्याच्या कोपऱ्यावरील छोट्या मंडपापासून सुरू झालेला हा उत्सव आज परिसरातील सर्वात लाडका उत्सव बनला आहे. दरवर्षी हजारो भाविक दर्शन, आरती व सांस्कृतिक कार्यक्रमांसाठी येतात.",
+      "उत्सवाशिवाय वर्षभर मंडळ सामाजिक कार्यात सक्रिय असते — रक्तदान शिबिरे, वृक्षारोपण, विद्यार्थ्यांना मदत आणि आपत्कालीन सेवा."
+    ],
+    "timeline": [
+      {
+        "year": "1969",
+        "title": "First Ganeshotsav",
+        "titleMr": "पहिला गणेशोत्सव",
+        "text": "First Ganpati installed by the founding members.",
+        "textMr": "संस्थापक सदस्यांनी पहिल्या गणपतीची स्थापना केली."
+      },
+      {
+        "year": "1985",
+        "title": "Registered as a trust",
+        "titleMr": "धर्मादाय संस्था म्हणून नोंदणी",
+        "text": "The mandal became a registered public trust.",
+        "textMr": "मंडळाची सार्वजनिक न्यास म्हणून नोंदणी झाली."
+      },
+      {
+        "year": "1993",
+        "title": "Silver Jubilee",
+        "titleMr": "रौप्य महोत्सव",
+        "text": "25th Ganeshotsav celebrated with a week-long cultural festival.",
+        "textMr": "२५ व्या गणेशोत्सवानिमित्त आठवडाभर सांस्कृतिक महोत्सव."
+      },
+      {
+        "year": "2018",
+        "title": "Golden Jubilee",
+        "titleMr": "सुवर्ण महोत्सव",
+        "text": "50th Ganeshotsav – a grand celebration with the whole city.",
+        "textMr": "५० वा गणेशोत्सव – संपूर्ण शहरासह भव्य सोहळा."
+      },
+      {
+        "year": "2019",
+        "title": "Went eco-friendly",
+        "titleMr": "पर्यावरणपूरक उत्सव",
+        "text": "Switched permanently to a Shadu clay idol.",
+        "textMr": "कायमस्वरूपी शाडू मातीच्या मूर्तीचा निर्णय."
+      },
+      {
+        "year": "2027",
+        "title": "59th year",
+        "titleMr": "५९ वे वर्ष",
+        "text": "Preparations for our 59th Ganeshotsav have begun.",
+        "textMr": "५९ व्या गणेशोत्सवाची तयारी सुरू."
+      }
+    ]
+  },
+  "stats": [
+    {
+      "value": "58",
+      "label": "Years of Ganeshotsav",
+      "labelMr": "गणेशोत्सवाची वर्षे"
+    },
+    {
+      "value": "150+",
+      "label": "Volunteers",
+      "labelMr": "कार्यकर्ते"
+    },
+    {
+      "value": "50,000+",
+      "label": "Devotees every year",
+      "labelMr": "दरवर्षी भाविक"
+    },
+    {
+      "value": "25",
+      "label": "Social initiatives",
+      "labelMr": "सामाजिक उपक्रम"
+    }
+  ],
+  "awards": [
+    {
+      "text": "Best Decoration – City Ganeshotsav Competition 2025",
+      "textMr": "उत्कृष्ट देखावा – शहर गणेशोत्सव स्पर्धा २०२५"
+    },
+    {
+      "text": "Disciplined Mandal Award – Local Police Station 2024",
+      "textMr": "शिस्तबद्ध मंडळ पुरस्कार – स्थानिक पोलीस ठाणे २०२४"
+    },
+    {
+      "text": "Eco-friendly Ganeshotsav Award – Municipal Corporation 2023",
+      "textMr": "पर्यावरणपूरक गणेशोत्सव पुरस्कार – महानगरपालिका २०२३"
+    },
+    {
+      "text": "Blood Donation Motivation Honour – City Blood Bank 2022",
+      "textMr": "रक्तदान प्रेरणा सन्मान – शहर रक्तपेढी २०२२"
+    },
+    {
+      "text": "Best Social Work Mandal – 2019",
+      "textMr": "उत्कृष्ट सामाजिक कार्य मंडळ – २०१९"
+    }
+  ],
+  "announcements": [
+    {
+      "date": "2026-10-10",
+      "title": "Planning for 2027 begins",
+      "titleMr": "२०२७ च्या नियोजनाला सुरुवात",
+      "text": "The first committee meeting for Ganeshotsav 2027 will be held on Sunday at the mandal office.",
+      "textMr": "गणेशोत्सव २०२७ ची पहिली बैठक रविवारी मंडळ कार्यालयात होईल."
+    },
+    {
+      "date": "2026-10-01",
+      "title": "Thank you, devotees!",
+      "titleMr": "भाविकांचे आभार!",
+      "text": "Ganeshotsav 2026 was a grand success. Photos are now up in the gallery.",
+      "textMr": "गणेशोत्सव २०२६ उत्साहात पार पडला. फोटो गॅलरीत पहा."
+    }
+  ],
+  "about": {
+    "short": "A Sarvajanik Ganeshotsav mandal from Pune, inspired by Lokmanya Tilak, celebrating Bappa and serving the community since 1969.",
+    "shortMr": "लोकमान्य टिळकांच्या विचारांनी प्रेरित, १९६९ पासून बाप्पाचा उत्सव व समाजसेवा करणारे पुण्यातील सार्वजनिक गणेशोत्सव मंडळ."
+  },
+  "contact": {
+    "phone": "+91 98765 43210",
+    "whatsapp": "919876543210",
+    "email": "contact@yourmandal.org",
+    "mapEmbedUrl": "https://www.google.com/maps?q=Shaniwar+Wada,+Pune&output=embed",
+    "mapLink": "https://maps.google.com/?q=Shaniwar+Wada,+Pune"
+  },
+  "social": {
+    "youtube": "https://youtube.com/",
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "whatsapp": "https://wa.me/919876543210"
+  },
+  "live": {
+    "note": "Live darshan is streamed on our YouTube channel during Ganeshotsav from 6:00 AM to 11:30 PM.",
+    "noteMr": "गणेशोत्सवात सकाळी ६ ते रात्री ११:३० पर्यंत आमच्या YouTube चॅनेलवर थेट दर्शन.",
+    "youtubeChannelId": "",
+    "youtubeLiveVideoId": ""
+  },
+  "donation": {
+    "enabled": true,
+    "upiId": "yourmandal@upi",
+    "payeeName": "Your Ganeshotsav Mandal",
+    "note": "You can contribute to the Utsav and to the social initiatives run by the mandal throughout the year.",
+    "noteMr": "उत्सव व मंडळाच्या वर्षभरातील सामाजिक उपक्रमांसाठी आपण देणगी देऊ शकता.",
+    "bank": {
+      "accountName": "Your Ganeshotsav Mandal Trust",
+      "accountNumber": "XXXXXXXXXXXX",
+      "ifsc": "XXXX0000000",
+      "bankName": "Your Bank, Branch Name"
+    }
+  }
+}
