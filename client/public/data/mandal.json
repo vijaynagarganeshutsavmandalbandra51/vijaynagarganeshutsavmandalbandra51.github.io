@@ -149,19 +149,15 @@
       "labelMr": "दरवर्षी भाविक"
     },
     {
-      "value": "25",
-      "label": "Social initiatives",
-      "labelMr": "सामाजिक उपक्रम"
+      "value": "300–400",
+      "label": "People served at our annual Bhandara",
+      "labelMr": "वार्षिक भंडाऱ्यात महाप्रसाद घेणारे"
     }
   ],
   "awards": [
     {
-      "text": "Disciplined Mandal Award – Local Police Station 2024",
-      "textMr": "शिस्तबद्ध मंडळ पुरस्कार – स्थानिक पोलीस ठाणे २०२४"
-    },
-    {
-      "text": "Best Social Work Mandal – 2019",
-      "textMr": "उत्कृष्ट सामाजिक कार्य मंडळ – २०१९"
+      "text": "Our Kedarnath decoration was featured on TV news – Ganeshotsav 2026",
+      "textMr": "आमचा केदारनाथ देखावा टीव्ही बातम्यांमध्ये झळकला – गणेशोत्सव २०२६"
     }
   ],
   "announcements": [
@@ -181,8 +177,8 @@
     }
   ],
   "about": {
-    "short": "A Sarvajanik Ganesh Utsav mandal from Vijay Nagar, Bandra (East), Mumbai, inspired by Lokmanya Tilak, celebrating Bappa and serving the community since 1969.",
-    "shortMr": "लोकमान्य टिळकांच्या विचारांनी प्रेरित, १९६९ पासून बाप्पाचा उत्सव व समाजसेवा करणारे विजय नगर, वांद्रे (पूर्व), मुंबई येथील सार्वजनिक गणेशोत्सव मंडळ."
+    "short": "A Sarvajanik Ganesh Utsav mandal from Vijay Nagar, Bandra (East), Mumbai, celebrating Bappa and serving the community since 1969.",
+    "shortMr": "१९६९ पासून बाप्पाचा उत्सव व समाजसेवा करणारे विजय नगर, वांद्रे (पूर्व), मुंबई येथील सार्वजनिक गणेशोत्सव मंडळ."
   },
   "contact": {
     "phone": "+91 98765 43210",

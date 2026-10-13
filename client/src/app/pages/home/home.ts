@@ -52,7 +52,7 @@ export class Home {
     return p?.kind === 'ongoing' ? p : null;
   });
 
-  protected readonly homeVideos = computed(() => (this.videos()?.videos ?? []).filter((v) => v.showOnHome));
+  protected readonly homeVideos = computed(() => (this.videos()?.videos ?? []).filter((v) => v.showOnHome && !!v.youtubeId));
   /** Latest year folders for the "Through the years" strip. */
   protected readonly recentYears = computed(() => (this.years()?.years ?? []).slice(0, 8));
   /** First photos across the newest years for the masonry preview. */

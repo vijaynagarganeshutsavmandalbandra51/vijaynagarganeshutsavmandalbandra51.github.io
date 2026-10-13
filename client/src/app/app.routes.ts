@@ -13,10 +13,9 @@ export const routes: Routes = [
 
   // Utsav
   { path: 'schedule', title: 'Schedule & Events', loadComponent: () => import('./pages/schedule/schedule').then((m) => m.SchedulePage) },
-  { path: 'live', title: 'Live Darshan', loadComponent: () => import('./pages/live/live').then((m) => m.LivePage) },
+  { path: 'live', redirectTo: '' },
 
-  // Initiatives (?tab=social | educational)
-  { path: 'initiatives', title: 'Initiatives', loadComponent: () => import('./pages/initiatives/initiatives').then((m) => m.InitiativesPage) },
+  { path: 'initiatives', redirectTo: '' },
 
   // Media – year-wise folders in public/media/years
   { path: 'years', title: 'Bappa Through the Years', loadComponent: () => import('./pages/years/years').then((m) => m.YearsPage) },

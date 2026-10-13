@@ -54,8 +54,7 @@
           <span>{{ i18n.t('dayOf') }} {{ o.dayNumber }} / {{ o.totalDays }}</span>
         </div>
         <div class="band__actions">
-          <a routerLink="/live" class="btn btn--light">🔴 {{ i18n.t('watchLive') }}</a>
-          <a routerLink="/schedule" class="btn btn--ghost">{{ i18n.t('todaysPrograms') }}</a>
+          <a routerLink="/schedule" class="btn btn--light">{{ i18n.t('todaysPrograms') }}</a>
         </div>
       } @else {
         <div class="band__label">

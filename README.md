@@ -173,7 +173,7 @@ mandal-website/
 └── README.md
 ```
 
-**Pages:** Home · Mandal's History · Committee · Decoration Theme · Schedule & Events · Live Darshan & Videos · Social / Educational Initiatives · Bappa Through the Years · each year · Photo Gallery · Contact & Donate (UPI QR) · Distinguished Visitors.
+**Pages:** Home · Mandal's History · Committee · Decoration Theme · Distinguished Visitors · Schedule & Events (shows a countdown until `schedule.json` has `"published": true`) · Bappa Through the Years · each year · Photo Gallery · Contact & Donate (UPI QR).
 
 **Where content comes from:** `npm start` and GitHub Pages read `data/*.json` directly; the ASP.NET Core server serves the same files through `/api/content/*`.
 

@@ -43,26 +43,12 @@ export class Header {
         { label: 'visitors', path: '/visitors' },
       ],
     },
-    {
-      label: 'utsav',
-      children: [
-        { label: 'schedule', path: '/schedule' },
-        { label: 'live', path: '/live' },
-      ],
-    },
-    {
-      label: 'initiatives',
-      children: [
-        { label: 'socialInitiatives', path: '/initiatives', queryParams: { tab: 'social' } },
-        { label: 'educationalInitiatives', path: '/initiatives', queryParams: { tab: 'educational' } },
-      ],
-    },
+    { label: 'schedule', path: '/schedule' },
     {
       label: 'media',
       children: [
         { label: 'yearsShort', path: '/years' },
         { label: 'gallery', path: '/gallery' },
-        { label: 'videos', path: '/live', fragment: 'videos' },
       ],
     },
     { label: 'contact', path: '/contact' },
