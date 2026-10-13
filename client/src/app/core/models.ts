@@ -140,6 +140,8 @@ export interface ScheduleDay {
 
 export interface Schedule {
   year: number;
+  /** false = programme not announced yet; the Schedule page shows a countdown instead */
+  published?: boolean;
   note?: string;
   noteMr?: string;
   days: ScheduleDay[];

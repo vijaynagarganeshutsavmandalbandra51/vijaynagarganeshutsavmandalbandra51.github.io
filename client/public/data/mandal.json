@@ -53,8 +53,8 @@
     "year": 2027,
     "startDate": "2027-09-04T10:00:00+05:30",
     "visarjanDate": "2027-09-14T16:00:00+05:30",
-    "theme": "Eco-friendly Ganeshotsav — Shadu clay idol, zero plastic",
-    "themeMr": "पर्यावरणपूरक गणेशोत्सव — शाडू मातीची मूर्ती, प्लास्टिकमुक्त"
+    "theme": "",
+    "themeMr": ""
   },
   "aartiTimings": [
     {
@@ -122,13 +122,6 @@
         "textMr": "५० वा गणेशोत्सव – संपूर्ण शहरासह भव्य सोहळा."
       },
       {
-        "year": "2019",
-        "title": "Went eco-friendly",
-        "titleMr": "पर्यावरणपूरक उत्सव",
-        "text": "Switched permanently to a Shadu clay idol.",
-        "textMr": "कायमस्वरूपी शाडू मातीच्या मूर्तीचा निर्णय."
-      },
-      {
         "year": "2027",
         "title": "59th year",
         "titleMr": "५९ वे वर्ष",
@@ -161,16 +154,8 @@
   ],
   "awards": [
     {
-      "text": "Best Decoration – City Ganeshotsav Competition 2025",
-      "textMr": "उत्कृष्ट देखावा – शहर गणेशोत्सव स्पर्धा २०२५"
-    },
-    {
       "text": "Disciplined Mandal Award – Local Police Station 2024",
       "textMr": "शिस्तबद्ध मंडळ पुरस्कार – स्थानिक पोलीस ठाणे २०२४"
-    },
-    {
-      "text": "Eco-friendly Ganeshotsav Award – Municipal Corporation 2023",
-      "textMr": "पर्यावरणपूरक गणेशोत्सव पुरस्कार – महानगरपालिका २०२३"
     },
     {
       "text": "Best Social Work Mandal – 2019",

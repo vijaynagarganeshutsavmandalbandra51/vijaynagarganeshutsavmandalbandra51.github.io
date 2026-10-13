@@ -1,8 +1,8 @@
 import { DatePipe } from '@angular/common';
-import { Component, computed, effect, inject, signal } from '@angular/core';
+import { Component, DestroyRef, computed, effect, inject, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ContentService } from '../../core/content.service';
-import { todayIso } from '../../core/festival';
+import { festivalPhase, todayIso } from '../../core/festival';
 import { I18nService } from '../../core/i18n.service';
 import { PageBanner } from '../../shared/page-banner/page-banner';
 
@@ -12,8 +12,43 @@ import { PageBanner } from '../../shared/page-banner/page-banner';
   template: `
     <app-page-banner
       [title]="i18n.t('schedule') + ' ' + i18n.digits(schedule()?.year ?? '')"
-      [subtitle]="i18n.isMr() ? 'पूजा, आरती, सांस्कृतिक कार्यक्रम आणि सेवा – सर्वांचे स्वागत!' : 'Ten days of puja, aarti, culture and seva. Everyone is welcome!'"
+      [subtitle]="published()
+        ? (i18n.isMr() ? 'पूजा, आरती, सांस्कृतिक कार्यक्रम आणि सेवा – सर्वांचे स्वागत!' : 'Ten days of puja, aarti, culture and seva. Everyone is welcome!')
+        : (i18n.isMr() ? 'कार्यक्रमांची तयारी सुरू आहे' : 'Preparations are underway')"
     />
+
+    @if (!published() && mandal(); as m) {
+      <!-- Shown until schedule.json has "published": true -->
+      <section class="section section--warm">
+        <div class="container soon">
+          <div class="soon__card">
+            <span class="soon__om marathi">|| गणपती बाप्पा मोरया ||</span>
+            <h2>{{ i18n.t('bappaComing') }}</h2>
+            <p class="soon__date">{{ m.festival.startDate | date: 'EEEE, d MMMM y' : undefined : i18n.locale() }}</p>
+            @if (countdown(); as c) {
+              <div class="soon__count">
+                <div><b>{{ c.days }}</b><span>{{ i18n.t('days') }}</span></div>
+                <div><b>{{ pad(c.hours) }}</b><span>{{ i18n.t('hours') }}</span></div>
+                <div><b>{{ pad(c.minutes) }}</b><span>{{ i18n.t('minutes') }}</span></div>
+                <div><b>{{ pad(c.seconds) }}</b><span>{{ i18n.t('seconds') }}</span></div>
+              </div>
+            }
+            <p class="soon__text">
+              {{ i18n.isMr()
+                ? 'गणेशोत्सव ' + i18n.digits(m.festival.year) + ' च्या कार्यक्रमांची तयारी सुरू आहे. संपूर्ण कार्यक्रम पत्रिका लवकरच येथे जाहीर केली जाईल.'
+                : 'Preparations for Ganeshotsav ' + m.festival.year + ' are underway. The full day-wise programme will be announced here soon.' }}
+            </p>
+            @if (m.social.instagram) {
+              <a class="btn btn--light" [href]="m.social.instagram" target="_blank" rel="noopener">
+                {{ i18n.isMr() ? 'अपडेटसाठी Instagram वर फॉलो करा' : 'Follow us on Instagram for updates' }}
+              </a>
+            }
+          </div>
+        </div>
+      </section>
+    }
+
+    @if (published()) {
 
     <section class="section">
       <div class="container">
@@ -71,8 +106,28 @@ import { PageBanner } from '../../shared/page-banner/page-banner';
         }
       </div>
     </section>
+    }
   `,
   styles: `
+    .soon { display: flex; justify-content: center; }
+    .soon__card { width: 100%; max-width: 760px; text-align: center; padding: 44px 32px 40px; border-radius: 24px; color: #fff;
+      background: linear-gradient(135deg, var(--accent) 0%, #b4541c 45%, var(--primary) 100%);
+      box-shadow: 0 30px 60px -30px rgba(20,40,80,.7); }
+    .soon__om { display: block; color: var(--marigold, #f5b301); font-size: 1.1rem; margin-bottom: 8px; }
+    .soon__card h2 { color: var(--marigold, #f5b301); margin: 0 0 6px; font-size: clamp(1.8rem, 5vw, 2.6rem); }
+    .soon__date { font-size: 1.15rem; margin: 0 0 26px; opacity: .95; }
+    .soon__count { display: flex; justify-content: center; gap: 12px; margin-bottom: 28px; }
+    .soon__count div { min-width: 82px; padding: 12px 8px; border-radius: 14px; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.28); }
+    .soon__count b { display: block; font-size: 2rem; line-height: 1.1; }
+    .soon__count span { font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; opacity: .9; }
+    .soon__text { max-width: 520px; margin: 0 auto 24px; line-height: 1.7; opacity: .95; }
+    @media (max-width: 600px) {
+      .soon__card { padding: 32px 18px 30px; border-radius: 20px; }
+      .soon__count { gap: 8px; }
+      .soon__count div { min-width: 0; flex: 1; padding: 10px 4px; }
+      .soon__count b { font-size: 1.6rem; }
+      .soon__count span { font-size: .66rem; letter-spacing: .04em; }
+    }
     .days { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 10px; margin-bottom: 28px; }
     /* phones: one swipeable row of day chips */
     @media (max-width: 600px) {
@@ -126,12 +181,28 @@ export class SchedulePage {
   protected readonly schedule = toSignal(inject(ContentService).schedule());
   protected readonly today = todayIso();
   protected readonly selectedDay = signal(1);
+  protected readonly mandal = inject(ContentService).mandal;
+  /** schedule.json → "published": false shows the "Bappa is coming" countdown instead of the day-wise plan. */
+  protected readonly published = computed(() => this.schedule()?.published !== false);
+
+  private readonly now = signal(Date.now());
+  protected readonly countdown = computed(() => {
+    const m = this.mandal();
+    const p = m ? festivalPhase(this.now(), m.festival.startDate, m.festival.visarjanDate) : undefined;
+    return p?.kind === 'upcoming' ? p : null;
+  });
+  protected pad(n: number): string {
+    return String(n).padStart(2, '0');
+  }
 
   protected readonly current = computed(() =>
     this.schedule()?.days.find((d) => d.day === this.selectedDay()),
   );
 
   constructor() {
+    const timer = setInterval(() => this.now.set(Date.now()), 1000);
+    inject(DestroyRef).onDestroy(() => clearInterval(timer));
+
     // During the festival, open today's tab automatically.
     effect(() => {
       const todayEntry = this.schedule()?.days.find((d) => d.date === this.today);

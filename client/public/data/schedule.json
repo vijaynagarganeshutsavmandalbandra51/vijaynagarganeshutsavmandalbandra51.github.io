@@ -1,5 +1,6 @@
 {
   "year": 2027,
+  "published": false,
   "note": "Timings may change slightly. Please follow our Instagram / WhatsApp for live updates.",
   "days": [
     {
@@ -43,7 +44,7 @@
         {
           "time": "6:00 PM",
           "title": "Kids Drawing Competition",
-          "description": "Theme: My Eco-friendly Bappa"
+          "description": "Theme: My Bappa"
         },
         {
           "time": "8:30 PM",
@@ -287,12 +288,12 @@
         {
           "time": "4:00 PM",
           "title": "Visarjan Procession",
-          "description": "Procession with dhol-tasha, lezim and eco-friendly gulal"
+          "description": "Procession with dhol-tasha, lezim and gulal"
         },
         {
           "time": "10:00 PM",
           "title": "Visarjan",
-          "description": "Visarjan at the artificial tank – पुढच्या वर्षी लवकर या!"
+          "description": "Visarjan – पुढच्या वर्षी लवकर या!"
         }
       ],
       "titleMr": "विसर्जन मिरवणूक"
