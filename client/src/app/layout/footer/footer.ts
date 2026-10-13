@@ -42,7 +42,7 @@ import { ICONS } from '../social-rail/social-rail';
             <h4>{{ i18n.t('contactUs') }}</h4>
             <ul class="contact">
               @if (m.contact.phone) {
-                <li><span>{{ i18n.t('phone') }}:</span>&nbsp;<a [href]="'tel:' + m.contact.phone">{{ m.contact.phone }}</a></li>
+                <li><span>{{ i18n.t('phone') }}:</span>&nbsp;<a [href]="m.contact.whatsapp ? (m.social.whatsapp || ('https://wa.me/' + m.contact.whatsapp)) : 'tel:' + m.contact.phone" target="_blank" rel="noopener">{{ m.contact.phone }}</a></li>
               }
               @if (m.contact.email) {
                 <li><span>{{ i18n.t('email') }}:</span>&nbsp;<a [href]="'mailto:' + m.contact.email">{{ m.contact.email }}</a></li>

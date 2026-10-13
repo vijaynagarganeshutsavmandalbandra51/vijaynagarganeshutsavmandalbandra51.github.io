@@ -244,7 +244,7 @@
       <div class="contact" appReveal>
         <div class="contact__info">
           @if (m.contact.phone) {
-            <a class="contact__row" [href]="'tel:' + m.contact.phone"><span aria-hidden="true">📞</span>{{ m.contact.phone }}</a>
+            <a class="contact__row" [href]="m.contact.whatsapp ? (m.social.whatsapp || ('https://wa.me/' + m.contact.whatsapp)) : 'tel:' + m.contact.phone" target="_blank" rel="noopener"><span aria-hidden="true">💬</span>{{ m.contact.phone }} (WhatsApp)</a>
           }
           @if (m.contact.email) {
             <a class="contact__row" [href]="'mailto:' + m.contact.email"><span aria-hidden="true">✉️</span>{{ m.contact.email }}</a>

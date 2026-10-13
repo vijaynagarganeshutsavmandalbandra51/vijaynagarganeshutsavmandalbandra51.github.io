@@ -30,9 +30,12 @@ import { PageBanner } from '../../shared/page-banner/page-banner';
                 <span class="info__icon" aria-hidden="true">📞</span>
                 <div>
                   <h3>{{ i18n.t('phone') }}</h3>
-                  <a [href]="'tel:' + m.contact.phone">{{ m.contact.phone }}</a>
                   @if (m.contact.whatsapp) {
-                    <br /><a [href]="'https://wa.me/' + m.contact.whatsapp" target="_blank" rel="noopener">WhatsApp →</a>
+                    <a [href]="m.social.whatsapp || ('https://wa.me/' + m.contact.whatsapp)" target="_blank" rel="noopener">{{ m.contact.phone }}</a>
+                    <br /><a [href]="m.social.whatsapp || ('https://wa.me/' + m.contact.whatsapp)" target="_blank" rel="noopener">💬 WhatsApp →</a>
+                    &nbsp;·&nbsp;<a [href]="'tel:+' + m.contact.whatsapp">📞 {{ i18n.isMr() ? 'कॉल करा' : 'Call' }}</a>
+                  } @else {
+                    <a [href]="'tel:' + m.contact.phone">{{ m.contact.phone }}</a>
                   }
                 </div>
               </div>
