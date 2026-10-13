@@ -19,6 +19,7 @@ public class ContentController(IWebHostEnvironment env, ILogger<ContentControlle
         "committee",    // office bearers
         "videos",       // YouTube videos (home + Live Darshan page)
         "initiatives",  // social & educational initiatives
+        "visitors",     // distinguished visitors (leaders who visited the pandal)
         "years"         // generated from client/public/media/years/<year>/ folders at build time
     };
 

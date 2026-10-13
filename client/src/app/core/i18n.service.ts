@@ -14,6 +14,7 @@ const LABELS = {
   committee: { en: 'Committee Members', mr: 'कार्यकारिणी सदस्य' },
   viewCommittee: { en: 'View full committee', mr: 'संपूर्ण कार्यकारिणी पहा' },
   decoration: { en: 'Decoration Theme', mr: 'देखावा' },
+  visitors: { en: 'Distinguished Visitors', mr: 'मान्यवरांची भेट' },
   utsav: { en: 'Utsav', mr: 'उत्सव' },
   schedule: { en: 'Schedule & Events', mr: 'कार्यक्रम पत्रिका' },
   initiatives: { en: 'Initiatives', mr: 'उपक्रम' },

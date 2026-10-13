@@ -8,6 +8,7 @@ export const routes: Routes = [
   // Mandal info
   { path: 'about', title: "Mandal's History", loadComponent: () => import('./pages/about/about').then((m) => m.About) },
   { path: 'committee', title: 'Committee', loadComponent: () => import('./pages/committee/committee').then((m) => m.CommitteePage) },
+  { path: 'visitors', title: 'Distinguished Visitors', loadComponent: () => import('./pages/visitors/visitors').then((m) => m.VisitorsPage) },
   { path: 'decoration', title: 'Decoration Theme', loadComponent: () => import('./pages/decoration/decoration').then((m) => m.DecorationPage) },
 
   // Utsav

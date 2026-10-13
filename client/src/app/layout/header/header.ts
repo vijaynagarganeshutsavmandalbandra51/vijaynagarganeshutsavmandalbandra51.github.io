@@ -40,6 +40,7 @@ export class Header {
         { label: 'history', path: '/about' },
         { label: 'committee', path: '/committee' },
         { label: 'decoration', path: '/decoration' },
+        { label: 'visitors', path: '/visitors' },
       ],
     },
     {

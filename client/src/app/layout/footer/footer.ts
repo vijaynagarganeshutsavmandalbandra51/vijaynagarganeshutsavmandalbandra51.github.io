@@ -97,6 +97,7 @@ export class Footer {
     { label: 'socialInitiatives', path: '/initiatives', query: { tab: 'social' } },
     { label: 'educationalInitiatives', path: '/initiatives', query: { tab: 'educational' } },
     { label: 'decoration', path: '/decoration' },
+    { label: 'visitors', path: '/visitors' },
     { label: 'schedule', path: '/schedule' },
     { label: 'years', path: '/years' },
     { label: 'gallery', path: '/gallery' },

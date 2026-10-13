@@ -1,0 +1,26 @@
+{
+  "intro": "Leaders and public figures who visited our pandal for Bappa's darshan and blessed our Utsav.",
+  "introMr": "बाप्पाच्या दर्शनासाठी आमच्या मंडपाला भेट देऊन उत्सवाला आशीर्वाद देणारे मान्यवर.",
+  "visitors": [
+    {
+      "year": 2026,
+      "name": "Shri Anil Parab",
+      "nameMr": "श्री. अनिल परब",
+      "role": "Shiv Sena (UBT) leader · MLC, Mumbai Graduates' Constituency · Former Transport & Parliamentary Affairs Minister, Maharashtra (2019–2022)",
+      "roleMr": "शिवसेना (उद्धव बाळासाहेब ठाकरे) नेते · विधान परिषद सदस्य, मुंबई पदवीधर मतदारसंघ · माजी परिवहन व संसदीय कार्य मंत्री, महाराष्ट्र (२०१९–२०२२)",
+      "text": "Took Bappa's darshan and was felicitated by the mandal.",
+      "textMr": "बाप्पाचे दर्शन घेतले; मंडळातर्फे सत्कार करण्यात आला.",
+      "photo": "images/visitors/2026-anil-parab.jpg"
+    },
+    {
+      "year": 2026,
+      "name": "Shri Arun Kamble",
+      "nameMr": "श्री. अरुण कांबळे",
+      "role": "",
+      "roleMr": "",
+      "text": "Took Bappa's darshan and was felicitated by the mandal.",
+      "textMr": "बाप्पाचे दर्शन घेतले; मंडळातर्फे सत्कार करण्यात आला.",
+      "photo": "images/visitors/2026-arun-kamble.jpg"
+    }
+  ]
+}

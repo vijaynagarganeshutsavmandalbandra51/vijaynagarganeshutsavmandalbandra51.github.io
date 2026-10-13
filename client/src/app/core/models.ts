@@ -213,3 +213,21 @@ export interface Initiatives {
 export interface Videos {
   videos: VideoItem[];
 }
+
+/** public/data/visitors.json – leaders / public figures who visited the pandal */
+export interface Visitor {
+  year: number;
+  name: string;
+  nameMr?: string;
+  role?: string;
+  roleMr?: string;
+  text?: string;
+  textMr?: string;
+  photo: string;
+}
+
+export interface Visitors {
+  intro?: string;
+  introMr?: string;
+  visitors: Visitor[];
+}

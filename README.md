@@ -103,6 +103,7 @@ All text is in **`client/public/data/`**. Any field can have a Marathi twin endi
 | `schedule.json` | Day-wise programs for the 11 days |
 | `videos.json` | YouTube videos (home page sections + Videos page). `showOnHome: true` puts it on the home page |
 | `initiatives.json` | Social & educational initiatives |
+| `visitors.json` | **Distinguished Visitors** page (leaders who visited the pandal). Copy one block per person: `year`, `name`/`nameMr`, `role`/`roleMr` (designation), `text`/`textMr`, `photo` (put the photo in `public/images/visitors/`, e.g. `2027-name.jpg`). Newest year is shown first. |
 | `committee.json` | **Committee Members** and **Helpers** (shown on the home page and the Committee page). Each person: `name`, `nameMr`, `role`, `roleMr`, `photo` (e.g. `images/committee/rahul.jpg`, empty = initials), `phone`. Section headings: `title` / `titleMr` — put the Marathi name for Helpers in `helpers.titleMr`. |
 
 **Images:** `client/public/images/`
@@ -172,7 +173,7 @@ mandal-website/
 └── README.md
 ```
 
-**Pages:** Home · Mandal's History · Committee · Decoration Theme · Schedule & Events · Live Darshan & Videos · Social / Educational Initiatives · Bappa Through the Years · each year · Photo Gallery · Contact & Donate (UPI QR).
+**Pages:** Home · Mandal's History · Committee · Decoration Theme · Schedule & Events · Live Darshan & Videos · Social / Educational Initiatives · Bappa Through the Years · each year · Photo Gallery · Contact & Donate (UPI QR) · Distinguished Visitors.
 
 **Where content comes from:** `npm start` and GitHub Pages read `data/*.json` directly; the ASP.NET Core server serves the same files through `/api/content/*`.
 

@@ -3,7 +3,7 @@ import { Injectable, inject } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { Observable, catchError, of, shareReplay } from 'rxjs';
 import { environment } from '../../environments/environment';
-import { Committee, Initiatives, MandalInfo, Schedule, Videos, YearsManifest } from './models';
+import { Committee, Initiatives, MandalInfo, Schedule, Videos, Visitors, YearsManifest } from './models';
 
 /**
  * Loads the website content (no database).
@@ -40,6 +40,10 @@ export class ContentService {
 
   initiatives(): Observable<Initiatives | undefined> {
     return this.load<Initiatives>('initiatives');
+  }
+
+  visitors(): Observable<Visitors | undefined> {
+    return this.load<Visitors>('visitors');
   }
 
 
