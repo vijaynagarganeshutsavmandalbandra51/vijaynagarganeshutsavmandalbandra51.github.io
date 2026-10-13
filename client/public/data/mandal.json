@@ -25,25 +25,28 @@
   ],
   "heroSlides": [
     {
-      "image": "images/slides/slide-1.svg",
+      "image": "media/years/2026/01-darshan.jpg",
+      "position": "center 30%",
       "title": "Ganpati Bappa Morya!",
       "titleMr": "गणपती बाप्पा मोरया!",
-      "subtitle": "Welcome to the official website of our mandal",
-      "subtitleMr": "आमच्या मंडळाच्या अधिकृत संकेतस्थळावर आपले स्वागत"
+      "subtitle": "Welcome to the official website of Vijay Nagar Sarvajanik Ganesh Utsav Mandal",
+      "subtitleMr": "विजय नगर सार्वजनिक गणेशोत्सव मंडळाच्या अधिकृत संकेतस्थळावर आपले स्वागत"
     },
     {
-      "image": "images/slides/slide-2.svg",
+      "image": "media/years/2026/cover.jpg",
+      "position": "center 22%",
       "title": "58 glorious years",
       "titleMr": "५८ वर्षांची गौरवशाली परंपरा",
       "subtitle": "Celebrating Bappa together since 1969 · 2027 is our 59th year",
       "subtitleMr": "१९६९ पासून एकत्र बाप्पाचा उत्सव · २०२७ – ५९ वे वर्ष"
     },
     {
-      "image": "images/slides/slide-3.svg",
-      "title": "Eco-friendly Ganeshotsav",
-      "titleMr": "पर्यावरणपूरक गणेशोत्सव",
-      "subtitle": "Shadu clay idol · Zero plastic · Artificial tank visarjan",
-      "subtitleMr": "शाडू मातीची मूर्ती · प्लास्टिकमुक्त · कृत्रिम हौद विसर्जन"
+      "image": "media/years/2026/02-bappa-nandi.jpg",
+      "position": "center 25%",
+      "title": "Kedarnath – Ganeshotsav 2026",
+      "titleMr": "केदारनाथ – गणेशोत्सव २०२६",
+      "subtitle": "Bappa before Mahadev in the Himalayas",
+      "subtitleMr": "हिमालयात महादेवासमोर विराजमान बाप्पा"
     }
   ],
   "festival": {

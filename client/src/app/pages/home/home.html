@@ -12,7 +12,7 @@
   >
     @for (s of m.heroSlides; track s.image; let i = $index) {
       <div class="hero__slide" [class.hero__slide--active]="i === slide()" [attr.aria-hidden]="i !== slide()">
-        <img [src]="s.image" [alt]="i18n.tr(s, 'title')" [attr.loading]="i === 0 ? 'eager' : 'lazy'" />
+        <img [src]="s.image" [style.object-position]="s.position || null" [alt]="i18n.tr(s, 'title')" [attr.loading]="i === 0 ? 'eager' : 'lazy'" />
         <div class="hero__caption container">
           <span class="hero__om marathi">|| श्री गणेशाय नमः ||</span>
           <h1>{{ i18n.tr(s, 'title') }}</h1>

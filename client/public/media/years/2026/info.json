@@ -1,19 +1,19 @@
 {
-  "title": "Wari – The Pilgrimage of Devotion",
-  "titleMr": "वारी – भक्तीची वाटचाल",
-  "text": "Our 58th year. The decoration showed the Pandharpur wari – warkaris, palkhi and the spirit of togetherness.",
-  "textMr": "आमचे ५८ वे वर्ष. पंढरपूरच्या वारीवर आधारित देखावा – वारकरी, पालखी आणि एकतेचे दर्शन.",
+  "title": "Kedarnath – The Abode of Mahadev",
+  "titleMr": "केदारनाथ – महादेवाचे धाम",
+  "text": "Our 58th year. Bappa was seated before Mahadev amid the snowy Himalayas, with the Kedarnath temple, trishul, damru and Nandi completing the darshan.",
+  "textMr": "आमचे ५८ वे वर्ष. हिमालयाच्या बर्फाळ शिखरांमध्ये महादेवासमोर विराजमान बाप्पा – केदारनाथ मंदिर, त्रिशूळ, डमरू आणि नंदीसह.",
   "youtube": [],
   "captions": {
-    "cover.svg": "Bappa 2026",
-    "02-aarti.svg": "Maha Aarti",
-    "03-decoration.svg": "Wari decoration",
-    "04-visarjan.svg": "Visarjan"
+    "cover.jpg": "Bappa 2026",
+    "01-darshan.jpg": "Darshan – Kedarnath decoration",
+    "02-bappa-nandi.jpg": "Bappa with Mahadev and Nandi",
+    "03-darshan.jpg": "Bappa in yellow pitambar"
   },
   "captionsMr": {
-    "cover.svg": "बाप्पा २०२६",
-    "02-aarti.svg": "महाआरती",
-    "03-decoration.svg": "वारी देखावा",
-    "04-visarjan.svg": "विसर्जन"
+    "cover.jpg": "बाप्पा २०२६",
+    "01-darshan.jpg": "दर्शन – केदारनाथ देखावा",
+    "02-bappa-nandi.jpg": "महादेव व नंदीसह बाप्पा",
+    "03-darshan.jpg": "पिवळ्या पितांबरातील बाप्पा"
   }
 }

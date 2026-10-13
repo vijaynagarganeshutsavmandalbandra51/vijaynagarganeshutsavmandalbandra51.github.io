@@ -9,6 +9,8 @@ export interface Text {
 
 export interface HeroSlide {
   image: string;
+  /** optional CSS object-position, e.g. "center 30%" to keep Bappa's face in view */
+  position?: string;
   title: string;
   titleMr?: string;
   subtitle?: string;
