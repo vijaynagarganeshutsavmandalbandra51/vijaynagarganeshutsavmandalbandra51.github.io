@@ -7,8 +7,8 @@
   "established": 1969,
   "firstUtsavYear": 1969,
   "logo": "images/logo.svg",
-  "address": "Teacher's Colony, Vijay Nagar, near Cardinal Gracias High School, Bandra (East), Mumbai, Maharashtra 400051",
-  "addressMr": "टीचर्स कॉलनी, विजय नगर, कार्डिनल ग्रेशियस हायस्कूलजवळ, वांद्रे (पूर्व), मुंबई, महाराष्ट्र ४०००५१",
+  "address": "Vijay Nagar Balwadi, M.H.B. Colony, Vijay Nagar, near Cardinal Gracias High School, Bandra (East), Mumbai, Maharashtra 400051",
+  "addressMr": "विजय नगर बालवाडी, एम.एच.बी. कॉलनी, विजय नगर, कार्डिनल ग्रेशियस हायस्कूलजवळ, वांद्रे (पूर्व), मुंबई, महाराष्ट्र ४०००५१",
   "marquee": [
     {
       "text": "Vijay Nagar Sarvajanik Ganesh Utsav Mandal, Bandra (East), Mumbai | Established 1969 | 59th year of Ganeshotsav in 2027",
@@ -172,8 +172,8 @@
     }
   ],
   "about": {
-    "short": "A Sarvajanik Ganesh Utsav mandal of Teacher's Colony, Vijay Nagar, Bandra (East), Mumbai, run independently by the residents of Buildings 1 to 8 and celebrating Bappa since 1969.",
-    "shortMr": "१९६९ पासून बाप्पाचा उत्सव साजरा करणारे, विजय नगर (इमारत क्र. १ ते ८) येथील रहिवाशांनी स्वतंत्रपणे चालवलेले टीचर्स कॉलनी, वांद्रे (पूर्व), मुंबई येथील सार्वजनिक गणेशोत्सव मंडळ."
+    "short": "A Sarvajanik Ganesh Utsav mandal of M.H.B. Colony, Vijay Nagar, Bandra (East), Mumbai, run independently by the residents of Buildings 1 to 8 and celebrating Bappa since 1969.",
+    "shortMr": "१९६९ पासून बाप्पाचा उत्सव साजरा करणारे, विजय नगर (इमारत क्र. १ ते ८) येथील रहिवाशांनी स्वतंत्रपणे चालवलेले एम.एच.बी. कॉलनी, वांद्रे (पूर्व), मुंबई येथील सार्वजनिक गणेशोत्सव मंडळ."
   },
   "contact": {
     "phone": "+91 83559 94705",
