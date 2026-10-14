@@ -121,18 +121,11 @@
         "photo": "images/logo.svg"
       },
       {
-        "name": "To be updated",
-        "nameMr": "लवकरच",
+        "name": "Kunal Redkar",
+        "nameMr": "कुणाल रेडकर",
         "role": "Member",
         "roleMr": "व्यवस्थापक",
-        "photo": "images/logo.svg"
-      },
-      {
-        "name": "To be updated",
-        "nameMr": "लवकरच",
-        "role": "Member",
-        "roleMr": "व्यवस्थापक",
-        "photo": "images/logo.svg"
+        "photo": "images/committee/kunal-redkar.jpg"
       },
       {
         "name": "To be updated",
@@ -154,6 +147,13 @@
         "role": "Member",
         "roleMr": "व्यवस्थापक",
         "photo": "images/committee/om-sawant.jpg"
+      },
+      {
+        "name": "Sarthak Kawthankar",
+        "nameMr": "सार्थक कवठणकर",
+        "role": "Member",
+        "roleMr": "व्यवस्थापक",
+        "photo": "images/committee/sarthak-kawthankar.jpg"
       },
       {
         "name": "To be updated",
