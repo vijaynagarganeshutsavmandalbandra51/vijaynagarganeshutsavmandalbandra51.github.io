@@ -193,7 +193,7 @@
 
         @if (c.helpers?.members?.length) {
           <h3 class="sub-title" appReveal>{{ i18n.tr(c.helpers, 'title') }}</h3>
-          <app-people-grid [people]="c.helpers!.members" variant="compact" />
+          <app-people-grid [people]="c.helpers!.members" />
         }
 
         <div class="center">

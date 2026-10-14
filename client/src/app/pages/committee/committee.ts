@@ -26,7 +26,7 @@ import { PeopleGrid } from '../../shared/people-grid';
         <section class="section section--warm">
           <div class="container">
             <h2 class="section-title">{{ i18n.tr(c.helpers, 'title') }}</h2>
-            <app-people-grid [people]="c.helpers!.members" variant="compact" />
+            <app-people-grid [people]="c.helpers!.members" />
           </div>
         </section>
       }
