@@ -77,13 +77,13 @@
     "image": "images/history.svg",
     "paragraphs": [
       "Our mandal was started in 1969 by a mutual decision of all the residents of Buildings 1 to 8 of Vijay Nagar, to bring everyone together in the spirit of Lokmanya Tilak's Sarvajanik Ganeshotsav. It is run independently by these residents and is not part of any other mandal or group.",
-      "What began as a small pandal on the street corner has grown into one of the most loved celebrations in the area. Every year, thousands of devotees visit for darshan, aarti and our cultural programs.",
-      "Beyond Ganeshotsav, the mandal brings Vijay Nagar together for other festivals such as Gudi Padwa, and serves the community — our annual Bhandara feeds 300 to 400 people every year, and we also help students and support neighbours during emergencies."
+      "What began as a small pandal on the street corner has grown into one of the most loved celebrations in the area. During the Utsav, thousands of devotees visit every day for darshan, aarti and our cultural programs.",
+      "Beyond Ganeshotsav, the mandal brings Vijay Nagar together for other festivals such as Gudi Padwa, and serves the community — our annual Bhandara feeds almost 1,000 people, we organise a Blood Donation Camp, and we also help students and support neighbours during emergencies."
     ],
     "paragraphsMr": [
       "लोकमान्य टिळकांच्या सार्वजनिक गणेशोत्सवाच्या प्रेरणेने, सर्वांना एकत्र आणण्यासाठी विजय नगरमधील इमारत क्रमांक १ ते ८ मधील सर्व रहिवाशांच्या एकमताने १९६९ साली आमच्या मंडळाची स्थापना झाली. मंडळाचे कामकाज हेच रहिवासी स्वतंत्रपणे चालवतात; मंडळ इतर कोणत्याही मंडळाचा किंवा गटाचा भाग नाही.",
-      "रस्त्याच्या कोपऱ्यावरील छोट्या मंडपापासून सुरू झालेला हा उत्सव आज परिसरातील सर्वात लाडका उत्सव बनला आहे. दरवर्षी हजारो भाविक दर्शन, आरती व सांस्कृतिक कार्यक्रमांसाठी येतात.",
-      "गणेशोत्सवासोबतच गुढीपाडव्यासारखे इतर सणही मंडळ विजय नगरमध्ये एकत्र साजरे करते आणि समाजसेवेत सक्रिय असते — आमच्या वार्षिक भंडाऱ्यात दरवर्षी ३०० ते ४०० जण महाप्रसादाचा लाभ घेतात; तसेच विद्यार्थ्यांना मदत व आपत्कालीन सेवा."
+      "रस्त्याच्या कोपऱ्यावरील छोट्या मंडपापासून सुरू झालेला हा उत्सव आज परिसरातील सर्वात लाडका उत्सव बनला आहे. उत्सवकाळात दररोज हजारो भाविक दर्शन, आरती व सांस्कृतिक कार्यक्रमांसाठी येतात.",
+      "गणेशोत्सवासोबतच गुढीपाडव्यासारखे इतर सणही मंडळ विजय नगरमध्ये एकत्र साजरे करते आणि समाजसेवेत सक्रिय असते — आमच्या वार्षिक भंडाऱ्यात जवळपास १,००० जण महाप्रसादाचा लाभ घेतात, मंडळातर्फे रक्तदान शिबिर आयोजित केले जाते, तसेच विद्यार्थ्यांना मदत व आपत्कालीन सेवा."
     ],
     "timeline": [
       {
@@ -135,12 +135,12 @@
       "labelMr": "कार्यकर्ते"
     },
     {
-      "value": "50,000+",
-      "label": "Devotees every year",
-      "labelMr": "दरवर्षी भाविक"
+      "value": "1000s",
+      "label": "Devotees every day of the Utsav",
+      "labelMr": "उत्सवात दररोज भाविक"
     },
     {
-      "value": "300–400",
+      "value": "1,000",
       "label": "People served at our annual Bhandara",
       "labelMr": "वार्षिक भंडाऱ्यात महाप्रसाद घेणारे"
     }
@@ -198,8 +198,8 @@
     "enabled": true,
     "upiId": "yourmandal@upi",
     "payeeName": "Vijay Nagar Sarvajanik Ganesh Utsav Mandal",
-    "note": "You can contribute to Bappa's Utsav and to our annual Bhandara, open to everyone.",
-    "noteMr": "बाप्पाच्या उत्सवासाठी व सर्वांसाठी खुल्या वार्षिक भंडाऱ्यासाठी आपण देणगी देऊ शकता.",
+    "note": "You can contribute to Bappa's Utsav, our annual Bhandara and our Blood Donation Camp.",
+    "noteMr": "बाप्पाचा उत्सव, वार्षिक भंडारा व रक्तदान शिबिरासाठी आपण देणगी देऊ शकता.",
     "bank": {
       "accountName": "Vijay Nagar Sarvajanik Ganesh Utsav Mandal",
       "accountNumber": "XXXXXXXXXXXX",
