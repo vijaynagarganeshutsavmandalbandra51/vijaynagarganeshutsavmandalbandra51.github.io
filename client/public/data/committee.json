@@ -1,38 +1,188 @@
 {
   "year": "2027",
-  "note": "Placeholder names – replace with the real committee. 'nameMr' / 'roleMr' = Marathi. 'photo' = images/committee/<file>.jpg (leave empty to show initials).",
-
+  "note": "'nameMr' / 'roleMr' = Marathi. 'photo' = images/committee/<file>.jpg (leave empty to show initials). Replace 'To be updated' with real names.",
   "committee": {
     "title": "Committee Members",
     "titleMr": "कार्यकारिणी सदस्य",
     "members": [
-      { "name": "Member Name", "nameMr": "", "role": "President", "roleMr": "अध्यक्ष", "photo": "", "phone": "" },
-      { "name": "Member Name", "nameMr": "", "role": "Vice President", "roleMr": "उपाध्यक्ष", "photo": "", "phone": "" },
-      { "name": "Member Name", "nameMr": "", "role": "Secretary", "roleMr": "सचिव", "photo": "", "phone": "" },
-      { "name": "Member Name", "nameMr": "", "role": "Joint Secretary", "roleMr": "सहसचिव", "photo": "", "phone": "" },
-      { "name": "Member Name", "nameMr": "", "role": "Treasurer", "roleMr": "खजिनदार", "photo": "", "phone": "" },
-      { "name": "Member Name", "nameMr": "", "role": "Joint Treasurer", "roleMr": "सहखजिनदार", "photo": "", "phone": "" },
-      { "name": "Member Name", "nameMr": "", "role": "Member", "roleMr": "सदस्य", "photo": "", "phone": "" },
-      { "name": "Member Name", "nameMr": "", "role": "Member", "roleMr": "सदस्य", "photo": "", "phone": "" }
+      {
+        "name": "To be updated",
+        "nameMr": "लवकरच",
+        "role": "President",
+        "roleMr": "अध्यक्ष",
+        "photo": "images/logo.svg",
+        "phone": ""
+      },
+      {
+        "name": "To be updated",
+        "nameMr": "लवकरच",
+        "role": "Vice-President",
+        "roleMr": "उपाध्यक्ष",
+        "photo": "images/logo.svg",
+        "phone": ""
+      },
+      {
+        "name": "To be updated",
+        "nameMr": "लवकरच",
+        "role": "General Secretary",
+        "roleMr": "सरचिटणीस",
+        "photo": "images/logo.svg",
+        "phone": ""
+      },
+      {
+        "name": "Nikhil Razak",
+        "nameMr": "निखिल रझाक",
+        "role": "Deputy Secretary",
+        "roleMr": "उपसचिव",
+        "photo": "images/committee/nikhil-razak.jpg",
+        "phone": ""
+      },
+      {
+        "name": "To be updated",
+        "nameMr": "लवकरच",
+        "role": "Treasurer",
+        "roleMr": "खजिनदार",
+        "photo": "images/logo.svg",
+        "phone": ""
+      },
+      {
+        "name": "To be updated",
+        "nameMr": "लवकरच",
+        "role": "Deputy Treasurer",
+        "roleMr": "उपखजिनदार",
+        "photo": "images/logo.svg",
+        "phone": ""
+      },
+      {
+        "name": "Yash Kadam",
+        "nameMr": "यश कदम",
+        "role": "Auditor",
+        "roleMr": "हिशेब तपासनीस",
+        "photo": "images/committee/yash-kadam.jpg",
+        "phone": ""
+      },
+      {
+        "name": "To be updated",
+        "nameMr": "लवकरच",
+        "role": "Auditor",
+        "roleMr": "हिशेब तपासनीस",
+        "photo": "images/logo.svg",
+        "phone": ""
+      },
+      {
+        "name": "To be updated",
+        "nameMr": "लवकरच",
+        "role": "Auditor",
+        "roleMr": "हिशेब तपासनीस",
+        "photo": "images/logo.svg",
+        "phone": ""
+      },
+      {
+        "name": "To be updated",
+        "nameMr": "लवकरच",
+        "role": "Auditor",
+        "roleMr": "हिशेब तपासनीस",
+        "photo": "images/logo.svg",
+        "phone": ""
+      },
+      {
+        "name": "To be updated",
+        "nameMr": "लवकरच",
+        "role": "Auditor",
+        "roleMr": "हिशेब तपासनीस",
+        "photo": "images/logo.svg",
+        "phone": ""
+      }
     ]
   },
-
   "helpers": {
     "title": "Helpers",
     "titleMr": "",
     "members": [
-      { "name": "Helper Name", "nameMr": "", "role": "", "roleMr": "", "photo": "" },
-      { "name": "Helper Name", "nameMr": "", "role": "", "roleMr": "", "photo": "" },
-      { "name": "Helper Name", "nameMr": "", "role": "", "roleMr": "", "photo": "" },
-      { "name": "Helper Name", "nameMr": "", "role": "", "roleMr": "", "photo": "" },
-      { "name": "Helper Name", "nameMr": "", "role": "", "roleMr": "", "photo": "" },
-      { "name": "Helper Name", "nameMr": "", "role": "", "roleMr": "", "photo": "" },
-      { "name": "Helper Name", "nameMr": "", "role": "", "roleMr": "", "photo": "" },
-      { "name": "Helper Name", "nameMr": "", "role": "", "roleMr": "", "photo": "" },
-      { "name": "Helper Name", "nameMr": "", "role": "", "roleMr": "", "photo": "" },
-      { "name": "Helper Name", "nameMr": "", "role": "", "roleMr": "", "photo": "" },
-      { "name": "Helper Name", "nameMr": "", "role": "", "roleMr": "", "photo": "" },
-      { "name": "Helper Name", "nameMr": "", "role": "", "roleMr": "", "photo": "" }
+      {
+        "name": "Helper Name",
+        "nameMr": "",
+        "role": "",
+        "roleMr": "",
+        "photo": ""
+      },
+      {
+        "name": "Helper Name",
+        "nameMr": "",
+        "role": "",
+        "roleMr": "",
+        "photo": ""
+      },
+      {
+        "name": "Helper Name",
+        "nameMr": "",
+        "role": "",
+        "roleMr": "",
+        "photo": ""
+      },
+      {
+        "name": "Helper Name",
+        "nameMr": "",
+        "role": "",
+        "roleMr": "",
+        "photo": ""
+      },
+      {
+        "name": "Helper Name",
+        "nameMr": "",
+        "role": "",
+        "roleMr": "",
+        "photo": ""
+      },
+      {
+        "name": "Helper Name",
+        "nameMr": "",
+        "role": "",
+        "roleMr": "",
+        "photo": ""
+      },
+      {
+        "name": "Helper Name",
+        "nameMr": "",
+        "role": "",
+        "roleMr": "",
+        "photo": ""
+      },
+      {
+        "name": "Helper Name",
+        "nameMr": "",
+        "role": "",
+        "roleMr": "",
+        "photo": ""
+      },
+      {
+        "name": "Helper Name",
+        "nameMr": "",
+        "role": "",
+        "roleMr": "",
+        "photo": ""
+      },
+      {
+        "name": "Helper Name",
+        "nameMr": "",
+        "role": "",
+        "roleMr": "",
+        "photo": ""
+      },
+      {
+        "name": "Helper Name",
+        "nameMr": "",
+        "role": "",
+        "roleMr": "",
+        "photo": ""
+      },
+      {
+        "name": "Helper Name",
+        "nameMr": "",
+        "role": "",
+        "roleMr": "",
+        "photo": ""
+      }
     ]
   }
 }
