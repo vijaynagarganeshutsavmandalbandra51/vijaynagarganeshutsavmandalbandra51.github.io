@@ -1,12 +1,31 @@
 {
-  "title": "Forts of Maharashtra",
-  "titleMr": "महाराष्ट्रातील गड-किल्ले",
-  "text": "Replicas of Raigad, Sinhagad and Pratapgad celebrating Chhatrapati Shivaji Maharaj's legacy.",
-  "textMr": "रायगड, सिंहगड व प्रतापगड यांच्या प्रतिकृतींतून छत्रपती शिवाजी महाराजांना वंदन.",
+  "title": "Bappa amid the Cosmos",
+  "titleMr": "ब्रह्मांडातील बाप्पा",
+  "text": "Our 57th year. The pandal was decorated as outer space – planets, galaxies and stars – with Mahadev above Bappa, and the whole mandal family gathered for darshan.",
+  "textMr": "आमचे ५७ वे वर्ष. ग्रह, आकाशगंगा व ताऱ्यांनी सजलेला अवकाश देखावा, बाप्पांच्या वर महादेव – आणि दर्शनासाठी एकत्र आलेला संपूर्ण मंडळ परिवार.",
   "youtube": [],
   "captions": {
-    "cover.svg": "Bappa 2025",
-    "02-fort.svg": "Fort decoration",
-    "03-procession.svg": "Aagman procession"
+    "cover.jpg": "Bappa 2025",
+    "01-bappa.jpg": "Vijay Nagarcha Raja 2025",
+    "02-close-up.jpg": "Bappa's divine face",
+    "03-garlands.jpg": "Bappa adorned with garlands",
+    "04-sparklers.jpg": "Aagman – sparkler welcome",
+    "05-darshan.jpg": "Devotees at darshan",
+    "06-decoration.jpg": "Cosmic decoration of the pandal",
+    "07-bappa.jpg": "Bappa in colourful lights",
+    "08-group.jpg": "Our mandal family with Bappa",
+    "09-group.jpg": "Together with Bappa – 2025"
+  },
+  "captionsMr": {
+    "cover.jpg": "बाप्पा २०२५",
+    "01-bappa.jpg": "विजय नगरचा राजा २०२५",
+    "02-close-up.jpg": "बाप्पाचे मनोहारी रूप",
+    "03-garlands.jpg": "हारांनी सजलेले बाप्पा",
+    "04-sparklers.jpg": "आगमन – फुलबाज्यांनी स्वागत",
+    "05-darshan.jpg": "दर्शनासाठी भाविक",
+    "06-decoration.jpg": "मंडपातील अवकाश देखावा",
+    "07-bappa.jpg": "रंगीत प्रकाशातील बाप्पा",
+    "08-group.jpg": "बाप्पासोबत आमचे मंडळ परिवार",
+    "09-group.jpg": "बाप्पासोबत सर्वजण – २०२५"
   }
 }
