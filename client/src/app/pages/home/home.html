@@ -118,6 +118,12 @@
           <div class="mission__intro">
             <h2 class="mission__title">{{ i18n.tr(ms, 'title') }}</h2>
             <p class="mission__subtitle">{{ i18n.tr(ms, 'subtitle') }}</p>
+            @if (ms.slogan) {
+              <blockquote class="mission__slogan">
+                “{{ ms.sloganMr || ms.slogan }}”
+                @if (i18n.lang() !== 'mr' && ms.sloganMr) { <small>{{ ms.slogan }}</small> }
+              </blockquote>
+            }
             @for (p of i18n.trList(ms, 'paragraphs'); track $index) {
               <p>{{ p }}</p>
             }

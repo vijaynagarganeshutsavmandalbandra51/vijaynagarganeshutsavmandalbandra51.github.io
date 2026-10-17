@@ -262,6 +262,8 @@ export interface Mission60 {
   titleMr?: string;
   subtitle: string;
   subtitleMr?: string;
+  slogan?: string;
+  sloganMr?: string;
   paragraphs: string[];
   paragraphsMr?: string[];
   note?: string;
