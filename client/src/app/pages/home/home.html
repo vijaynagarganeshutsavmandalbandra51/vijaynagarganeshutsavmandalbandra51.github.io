@@ -105,6 +105,60 @@
     </div>
   </section>
 
+  <!-- ================= MISSION 60 ================= -->
+  @if (m.mission60; as ms) {
+    <section class="section mission" id="mission-60">
+      <div class="container">
+        <div class="mission__head" appReveal>
+          <div class="mission__badge" aria-hidden="true">
+            <span class="mission__badge-label">{{ i18n.lang() === 'mr' ? 'मिशन' : 'Mission' }}</span>
+            <span class="mission__badge-num">{{ i18n.digits(60) }}</span>
+            <span class="mission__badge-year">{{ i18n.digits(2028) }}</span>
+          </div>
+          <div class="mission__intro">
+            <h2 class="mission__title">{{ i18n.tr(ms, 'title') }}</h2>
+            <p class="mission__subtitle">{{ i18n.tr(ms, 'subtitle') }}</p>
+            @for (p of i18n.trList(ms, 'paragraphs'); track $index) {
+              <p>{{ p }}</p>
+            }
+          </div>
+        </div>
+
+        <ol class="mission__track" appReveal>
+          @for (s of missionSteps(); track s.year) {
+            <li class="mstep" [class]="'mstep mstep--' + s.status" [class.mstep--goal]="s.goal">
+              <span class="mstep__dot" aria-hidden="true">
+                @if (s.status === 'done') { ✓ } @else if (s.goal) { ★ } @else { • }
+              </span>
+              <span class="mstep__year">{{ i18n.digits(s.year) }}</span>
+              <span class="mstep__ord">{{ i18n.tr(s, 'ordinal') }} {{ i18n.lang() === 'mr' ? 'गणेशोत्सव' : 'Ganeshotsav' }}</span>
+              <span class="mstep__label">{{ i18n.tr(s, 'label') }}</span>
+              @if (i18n.tr(s, 'dates')) { <span class="mstep__dates">{{ i18n.tr(s, 'dates') }}</span> }
+              <span class="mstep__status">
+                @switch (s.status) {
+                  @case ('done') { {{ i18n.lang() === 'mr' ? 'संपन्न' : 'Celebrated' }} }
+                  @case ('now') { {{ i18n.lang() === 'mr' ? 'सुरू आहे' : 'Happening now' }} }
+                  @case ('next') { {{ i18n.lang() === 'mr' ? 'पुढील' : 'Up next' }} }
+                  @default { {{ i18n.lang() === 'mr' ? 'ध्येय' : 'The goal' }} }
+                }
+              </span>
+            </li>
+          }
+        </ol>
+
+        @if (ms.note) {
+          <p class="mission__note">ℹ️ {{ i18n.tr(ms, 'note') }}</p>
+        }
+        @if (missionDays(); as d) {
+          <p class="mission__count">
+            <b>{{ i18n.digits(d) }}</b>
+            {{ i18n.lang() === 'mr' ? 'दिवस बाकी – ६० व्या गणेशोत्सवासाठी' : 'days to go for our 60th Ganeshotsav' }}
+          </p>
+        }
+      </div>
+    </section>
+  }
+
   <!-- ================= AARTI & DARSHAN ================= -->
   <section class="section section--warm aarti-section">
     <div class="container" appReveal>

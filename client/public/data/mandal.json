@@ -120,6 +120,13 @@
         "titleMr": "५९ वे वर्ष",
         "text": "Preparations for our 59th Ganeshotsav have begun.",
         "textMr": "५९ व्या गणेशोत्सवाची तयारी सुरू."
+      },
+      {
+        "year": "2028",
+        "title": "Diamond Jubilee – Mission 60",
+        "titleMr": "हीरक महोत्सव – मिशन ६०",
+        "text": "Our 60th Ganeshotsav – the goal of Mission 60.",
+        "textMr": "आमचा ६० वा गणेशोत्सव – मिशन ६० चे ध्येय."
       }
     ]
   },
@@ -226,5 +233,57 @@
       "file": "media/years/2026/visarjan-2026.mp4",
       "poster": "media/years/2026/visarjan-2026.poster.jpg"
     }
-  ]
+  ],
+  "mission60": {
+    "title": "Mission 60",
+    "titleMr": "मिशन ६०",
+    "subtitle": "Road to our Diamond Jubilee – the 60th Ganeshotsav in 2028",
+    "subtitleMr": "हीरक महोत्सवाकडे वाटचाल – २०२८ मध्ये ६० वा गणेशोत्सव",
+    "paragraphs": [
+      "Since 1969, Vijay Nagarcha Raja has come home to Vijay Nagar every year. In 2028 we complete 60 years of Ganeshotsav – our Diamond Jubilee (Hirak Mahotsav).",
+      "For the last five years, the whole mandal family has been working towards this milestone under one name: Mission 60. The plan is to make the 60th Ganeshotsav the grandest celebration in our history."
+    ],
+    "paragraphsMr": [
+      "१९६९ पासून दरवर्षी विजय नगरचा राजा विजय नगरमध्ये विराजमान होतो. २०२८ मध्ये आमच्या गणेशोत्सवाला ६० वर्षे पूर्ण होत आहेत – आमचा हीरक महोत्सव.",
+      "गेल्या पाच वर्षांपासून संपूर्ण मंडळ परिवार एकाच ध्येयाने काम करत आहे: मिशन ६०. ६० वा गणेशोत्सव आमच्या इतिहासातील सर्वात भव्य सोहळा करण्याचा आमचा संकल्प आहे."
+    ],
+    "note": "Our next Ganeshotsav (2027) is the 59th. The 60th – Mission 60 – is in 2028.",
+    "noteMr": "आमचा पुढचा गणेशोत्सव (२०२७) हा ५९ वा आहे. ६० वा – मिशन ६० – २०२८ मध्ये.",
+    "steps": [
+      {
+        "year": 2026,
+        "ordinal": "58th",
+        "ordinalMr": "५८ वा",
+        "label": "Kedarnath theme",
+        "labelMr": "केदारनाथ देखावा",
+        "dates": "",
+        "datesMr": "",
+        "start": "2026-09-14",
+        "end": "2026-09-25"
+      },
+      {
+        "year": 2027,
+        "ordinal": "59th",
+        "ordinalMr": "५९ वा",
+        "label": "The last year before our Diamond Jubilee",
+        "labelMr": "हीरक महोत्सवापूर्वीचे शेवटचे वर्ष",
+        "dates": "4 – 14 Sep 2027",
+        "datesMr": "४ – १४ सप्टेंबर २०२७",
+        "start": "2027-09-04",
+        "end": "2027-09-14"
+      },
+      {
+        "year": 2028,
+        "ordinal": "60th",
+        "ordinalMr": "६० वा",
+        "label": "Diamond Jubilee · Mission 60",
+        "labelMr": "हीरक महोत्सव · मिशन ६०",
+        "dates": "23 Aug – 2 Sep 2028 (expected)",
+        "datesMr": "२३ ऑगस्ट – २ सप्टेंबर २०२८ (अपेक्षित)",
+        "start": "2028-08-23",
+        "end": "2028-09-02",
+        "goal": true
+      }
+    ]
+  }
 }

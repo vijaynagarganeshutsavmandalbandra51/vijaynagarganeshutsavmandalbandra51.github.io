@@ -52,6 +52,31 @@ export class Home {
     return p?.kind === 'ongoing' ? p : null;
   });
 
+  // ---------- Mission 60 ----------
+  /** each step gets a status: done / now / next / later, based on today's date */
+  protected readonly missionSteps = computed(() => {
+    const steps = this.mandal()?.mission60?.steps ?? [];
+    const now = this.now();
+    let nextFound = false;
+    return steps.map((s) => {
+      const start = new Date(s.start + 'T00:00:00+05:30').getTime();
+      const end = new Date(s.end + 'T23:59:59+05:30').getTime();
+      let status: 'done' | 'now' | 'next' | 'later' = 'later';
+      if (now > end) status = 'done';
+      else if (now >= start) status = 'now';
+      else if (!nextFound) { status = 'next'; nextFound = true; }
+      return { ...s, status };
+    });
+  });
+
+  /** whole days left until the goal (60th) Ganeshotsav starts */
+  protected readonly missionDays = computed(() => {
+    const goal = this.mandal()?.mission60?.steps.find((s) => s.goal);
+    if (!goal) return null;
+    const ms = new Date(goal.start + 'T00:00:00+05:30').getTime() - this.now();
+    return ms > 0 ? Math.ceil(ms / 86_400_000) : null;
+  });
+
   /** featuredVideos list, or the older single featuredVideo */
   protected readonly featured = computed(() => {
     const m = this.mandal();

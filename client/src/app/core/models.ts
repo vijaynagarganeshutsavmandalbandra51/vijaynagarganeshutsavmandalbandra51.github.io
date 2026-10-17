@@ -89,6 +89,8 @@ export interface MandalInfo {
     paragraphsMr?: string[];
     timeline: TimelineItem[];
   };
+  /** "Mission 60" – road to the 60th Ganeshotsav (optional) */
+  mission60?: Mission60;
   stats: Stat[];
   /** an award can also carry a video (e.g. TV news clip) shown right under its text */
   awards: (Text & { video?: string; poster?: string; source?: string; sourceMr?: string })[];
@@ -240,4 +242,29 @@ export interface Visitors {
   intro?: string;
   introMr?: string;
   visitors: Visitor[];
+}
+
+export interface Mission60Step {
+  year: number;
+  ordinal: string;
+  ordinalMr?: string;
+  label: string;
+  labelMr?: string;
+  dates?: string;
+  datesMr?: string;
+  start: string;
+  end: string;
+  goal?: boolean;
+}
+
+export interface Mission60 {
+  title: string;
+  titleMr?: string;
+  subtitle: string;
+  subtitleMr?: string;
+  paragraphs: string[];
+  paragraphsMr?: string[];
+  note?: string;
+  noteMr?: string;
+  steps: Mission60Step[];
 }
